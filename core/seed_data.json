@@ -1,0 +1,1900 @@
+{
+  "products": [
+    {
+      "id": "ballistic-helmet-mk3",
+      "slug": "ballistic-helmet-mk3",
+      "name": "Ballistic Helmet Mk-III",
+      "category": "Defence",
+      "sectorId": "defence",
+      "tagline": "NIJ Level IIIA aramid composite combat helmet.",
+      "description": "High-cut combat helmet designed for special operations and tactical forces. Features superior fragment protection, lightweight aramid composite matrix, and integrated modular accessory side rails for comms, lights, and NVG shrouds.",
+      "featured": true,
+      "certifications": [
+        "NIJ 0106.01 Level IIIA",
+        "MIL-STD-662F V50 ≥ 650 m/s",
+        "STANAG 2920"
+      ],
+      "specs": [
+        {
+          "label": "Protection Level",
+          "value": "NIJ Level IIIA (.44 Mag / 9mm)"
+        },
+        {
+          "label": "Shell Material",
+          "value": "High-Tenacity Aramid Composite"
+        },
+        {
+          "label": "Weight",
+          "value": "1.45 kg ± 0.05 kg (Size L)"
+        },
+        {
+          "label": "Retention System",
+          "value": "4-point dial suspension harness"
+        },
+        {
+          "label": "Shroud & Rails",
+          "value": "Wilcox L4 NVG shroud + Picatinny rails"
+        },
+        {
+          "label": "Temperature Tolerance",
+          "value": "-40°C to +60°C operational"
+        }
+      ],
+      "leadTime": "30–45 Days",
+      "origin": "European Union / NATO OEM",
+      "warranty": "5 Years Ballistic Integrity",
+      "imageUrl": "https://images.unsplash.com/photo-1579829366248-204fe8413f31?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "body-armor-l4",
+      "slug": "body-armor-l4",
+      "name": "Tactical Body Armor Level IV",
+      "category": "Defence",
+      "sectorId": "defence",
+      "tagline": "Multi-curve hard armor plate, rifle-rated.",
+      "description": "Stand-alone multi-curve ballistic torso protection plate engineered from monolithic silicon carbide ceramics backed with ultra-high-molecular-weight polyethylene (UHMWPE). Tested against armor-piercing rifle ammunition.",
+      "featured": true,
+      "certifications": [
+        "NIJ 0101.06 Level IV Stand Alone",
+        "DEA Test Protocol",
+        "ISO 9001:2015"
+      ],
+      "specs": [
+        {
+          "label": "Threat Rating",
+          "value": "NIJ Level IV (.30-06 AP M2)"
+        },
+        {
+          "label": "Strike Face",
+          "value": "Sintered Silicon Carbide Ceramic"
+        },
+        {
+          "label": "Backing Layer",
+          "value": "Multi-axial UHMWPE Fiber Matrix"
+        },
+        {
+          "label": "Cut / Shape",
+          "value": "10×12 inch SAPI Single/Multi-curve"
+        },
+        {
+          "label": "Weight per Plate",
+          "value": "2.65 kg"
+        },
+        {
+          "label": "Edge Protection",
+          "value": "Full-wrap spall dampening Cordura"
+        }
+      ],
+      "leadTime": "25–40 Days",
+      "origin": "North America / EU OEM",
+      "warranty": "5 Years Manufacturer Guarantee",
+      "imageUrl": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "night-vision-goggles",
+      "slug": "night-vision-goggles",
+      "name": "Night Vision Goggles NVG-31",
+      "category": "Defence",
+      "sectorId": "defence",
+      "tagline": "Gen-3 white phosphor binocular night vision.",
+      "description": "Ruggedized dual-tube stereoscopic night vision binocular system providing true depth perception and situational awareness during night airborne, amphibious, and close-quarters tactical engagements.",
+      "featured": true,
+      "certifications": [
+        "MIL-STD-810H Environmental",
+        "FOM ≥ 2000 Autogated",
+        "IP67 Submersible 20m"
+      ],
+      "specs": [
+        {
+          "label": "Image Intensifier",
+          "value": "Gen-3 White Phosphor Autogated"
+        },
+        {
+          "label": "Field of View (FOV)",
+          "value": "40° Optical"
+        },
+        {
+          "label": "Figure of Merit (FOM)",
+          "value": "2000 – 2400"
+        },
+        {
+          "label": "Interpupillary Distance",
+          "value": "Independent flip-up pod design"
+        },
+        {
+          "label": "Power Source",
+          "value": "1x AA battery (15h) or external pack (50h)"
+        },
+        {
+          "label": "Weight",
+          "value": "480 g (without battery)"
+        }
+      ],
+      "leadTime": "45–60 Days",
+      "origin": "NATO Vetted Supplier",
+      "warranty": "2 Years Comprehensive",
+      "imageUrl": "https://images.unsplash.com/photo-1595590424283-b8f17842773f?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "tactical-comms-headset",
+      "slug": "tactical-comms-headset",
+      "name": "Tactical Communication Headset",
+      "category": "Tactical",
+      "sectorId": "defence",
+      "tagline": "Active hearing protection with dual-comm support.",
+      "description": "Military-grade tactical headset offering ambient sound amplification and dynamic compression for impulse weapon noise protection. Dual-lead interface connects simultaneously to NATO standard tactical radios.",
+      "featured": false,
+      "certifications": [
+        "MIL-STD-810H",
+        "ANSI S3.19-1974",
+        "NRR 22 dB"
+      ],
+      "specs": [
+        {
+          "label": "Noise Reduction Rating",
+          "value": "NRR 22 dB / SNR 28 dB"
+        },
+        {
+          "label": "Microphone",
+          "value": "Waterproof noise-canceling boom mic"
+        },
+        {
+          "label": "Comm Channels",
+          "value": "Dual PTT Nexus TP-120 inputs"
+        },
+        {
+          "label": "Mounting Style",
+          "value": "Foldable headband + ARC rail adapters"
+        },
+        {
+          "label": "Battery Life",
+          "value": "350+ Hours (2x AAA)"
+        },
+        {
+          "label": "Submersion",
+          "value": "IPX7 (1 meter for 30 minutes)"
+        }
+      ],
+      "leadTime": "15–30 Days",
+      "origin": "Sweden / Germany OEM",
+      "warranty": "2 Years Operational",
+      "imageUrl": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "combat-gloves-pro",
+      "slug": "combat-gloves-pro",
+      "name": "Combat Gloves Pro",
+      "category": "Tactical",
+      "sectorId": "defence",
+      "tagline": "Flame-resistant gloves with knuckle protection.",
+      "description": "Tactical gloves engineered with genuine DuPont™ Nomex® fabric for flash fire protection and anatomically molded thermal plastic rubber (TPR) knuckle armor.",
+      "featured": false,
+      "certifications": [
+        "EN 388:2016 (3121X)",
+        "EN 407 (Flame Resistant)",
+        "CE Marked"
+      ],
+      "specs": [
+        {
+          "label": "Shell Material",
+          "value": "DuPont™ Nomex® Flash Resistant"
+        },
+        {
+          "label": "Palm Surface",
+          "value": "0.6mm High-Dexterity Goat Leather"
+        },
+        {
+          "label": "Impact Guard",
+          "value": "Molded TPR Thermal Plastic Rubber"
+        },
+        {
+          "label": "Conductive Touch",
+          "value": "Touchscreen-compatible thumb & trigger"
+        },
+        {
+          "label": "Closure",
+          "value": "Low-profile thermal molded hook & loop"
+        }
+      ],
+      "leadTime": "15–20 Days",
+      "origin": "EU Certified OEM",
+      "warranty": "1 Year Warranty",
+      "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "field-ops-backpack",
+      "slug": "field-ops-backpack",
+      "name": "Field Operations Backpack 65L",
+      "category": "Tactical",
+      "sectorId": "defence",
+      "tagline": "Modular MOLLE assault & sustainment pack.",
+      "description": "Heavy-duty 65-liter long-range patrol rucksack fabricated with military-spec 1000D Cordura® nylon, weather-sealed YKK® zippers, and external laser-cut MOLLE webbing for specialized payload modularity.",
+      "featured": false,
+      "certifications": [
+        "MIL-SPEC 1000D Cordura®",
+        "Berry Amendment Compliant"
+      ],
+      "specs": [
+        {
+          "label": "Volume Capacity",
+          "value": "65 Liters (Main + 3 Expandable Pods)"
+        },
+        {
+          "label": "Fabric Composition",
+          "value": "1000D DWR Coated Cordura® Nylon"
+        },
+        {
+          "label": "Frame Structure",
+          "value": "Dual contoured aircraft aluminum stays"
+        },
+        {
+          "label": "Hydration Storage",
+          "value": "Dual 3L bladder internal routing"
+        },
+        {
+          "label": "Hardware",
+          "value": "Duraflex® military hardware + YKK® zips"
+        }
+      ],
+      "leadTime": "20–30 Days",
+      "origin": "USA / Europe OEM",
+      "warranty": "3 Years Field Warranty",
+      "imageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "marine-radar-x-band",
+      "slug": "marine-radar-x-band",
+      "name": "Marine Radar System X-Band",
+      "category": "Maritime",
+      "sectorId": "maritime",
+      "tagline": "X-band navigation & naval surveillance radar.",
+      "description": "IMO/SOLAS certified 25 kW X-band naval radar featuring narrow horizontal beamwidth for high-definition target discrimination in severe weather, coastal clutter, and heavy sea states.",
+      "featured": true,
+      "certifications": [
+        "IMO MSC.192(79)",
+        "SOLAS Chapter V",
+        "IEC 62388 Ed.2",
+        "MED-B Approved"
+      ],
+      "specs": [
+        {
+          "label": "Output Peak Power",
+          "value": "25 kW Magnetron Transmitter"
+        },
+        {
+          "label": "Max Detection Range",
+          "value": "96 Nautical Miles (NM)"
+        },
+        {
+          "label": "Antenna Array",
+          "value": "6 ft Open-Array Slotted Waveguide"
+        },
+        {
+          "label": "Rotation Speed",
+          "value": "24 RPM / 48 RPM High-Speed Craft"
+        },
+        {
+          "label": "ARPA Tracking",
+          "value": "100 Automatic Target Tracking targets"
+        },
+        {
+          "label": "Display Interface",
+          "value": "26\" ECDIS compliant Full HD display"
+        }
+      ],
+      "leadTime": "45–60 Days",
+      "origin": "Japan / UK Maritime OEM",
+      "warranty": "3 Years Full Support",
+      "imageUrl": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "life-raft-25p",
+      "slug": "life-raft-25p",
+      "name": "Heavy-Duty Life Raft 25P",
+      "category": "Maritime",
+      "sectorId": "maritime",
+      "tagline": "SOLAS davit-launched 25-person life raft.",
+      "description": "Self-righting, insulated dual-tube throw-overboard and davit-launched life raft engineered for merchant vessels, warships, and offshore drilling platforms operating in open oceans.",
+      "featured": false,
+      "certifications": [
+        "SOLAS 74/96",
+        "LSA Code",
+        "EC MED Module B+D",
+        "Bureau Veritas"
+      ],
+      "specs": [
+        {
+          "label": "Person Capacity",
+          "value": "25 Persons"
+        },
+        {
+          "label": "Deployment System",
+          "value": "Davit-Launched or Hydrostatic Release"
+        },
+        {
+          "label": "Canopy Construction",
+          "value": "Double-skinned thermal insulation canopy"
+        },
+        {
+          "label": "Emergency Pack",
+          "value": "SOLAS A Pack (Food, water, flares, first aid)"
+        },
+        {
+          "label": "Service Interval",
+          "value": "5-Year Extended Service Container"
+        }
+      ],
+      "leadTime": "30–45 Days",
+      "origin": "European Maritime Manufacturer",
+      "warranty": "5 Years Factory Integrity",
+      "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "hydrographic-sonar",
+      "slug": "hydrographic-sonar",
+      "name": "Hydrographic Survey Sonar",
+      "category": "Maritime",
+      "sectorId": "maritime",
+      "tagline": "Multibeam echosounder for harbor & seabed surveys.",
+      "description": "Ultra-high-resolution wideband multibeam echosounder integrating dual swath technology, inertial navigation, and surface sound velocity sensor for IHO Special Order port and channel bathymetry.",
+      "featured": false,
+      "certifications": [
+        "IHO S-44 Special Order Standards",
+        "CE Marine Tested",
+        "ISO 9001"
+      ],
+      "specs": [
+        {
+          "label": "Operating Frequency",
+          "value": "200 to 450 kHz Agile Frequency"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "0.5° Along-track × 1.0° Across-track"
+        },
+        {
+          "label": "Depth Range",
+          "value": "0.5 m to 500 m Water Depth"
+        },
+        {
+          "label": "Swath Width",
+          "value": "Up to 160° Coverage (7.5x Depth)"
+        },
+        {
+          "label": "Motion Sensor",
+          "value": "Integrated INS with Dual GNSS Heading"
+        }
+      ],
+      "leadTime": "60–75 Days",
+      "origin": "Norway / Denmark OEM",
+      "warranty": "2 Years Manufacturer Support",
+      "imageUrl": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "field-trauma-kit",
+      "slug": "field-trauma-kit",
+      "name": "Field Trauma Kit FTK-7",
+      "category": "Medical",
+      "sectorId": "defence",
+      "tagline": "Front-line tactical casualty care kit.",
+      "description": "TCCC-compliant individual and squad first-responder medical kit designed for severe blast and penetrating trauma management during military field operations and naval search and rescue.",
+      "featured": false,
+      "certifications": [
+        "CoTCCC Recommended Devices",
+        "CE Medical Class I",
+        "FDA Approved"
+      ],
+      "specs": [
+        {
+          "label": "Tourniquets",
+          "value": "2x Combat Application Tourniquet (CAT Gen 7)"
+        },
+        {
+          "label": "Hemostatic Agent",
+          "value": "2x QuikClot® Combat Gauze Z-Fold"
+        },
+        {
+          "label": "Chest Seal",
+          "value": "Vented Chest Seal Dual Pack"
+        },
+        {
+          "label": "Airway / Needle",
+          "value": "NPA 28F with lubricant + 14G Tension Needle"
+        },
+        {
+          "label": "Pouch Carrier",
+          "value": "500D Rip-Away MOLLE Tactical Pouch"
+        }
+      ],
+      "leadTime": "10–20 Days",
+      "origin": "USA / EU Medical Consortium",
+      "warranty": "Sterile Expiration: 3–5 Years",
+      "imageUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "patient-monitor",
+      "slug": "patient-monitor",
+      "name": "Portable Patient Monitor PM-12",
+      "category": "Medical",
+      "sectorId": "defence",
+      "tagline": "Field-deployable multi-parameter vital signs monitor.",
+      "description": "Ruggedized shock-resistant multi-parameter patient monitor equipped with sun-readable capacitive display, 8-hour hot-swappable battery, and wireless telemetry for tactical field hospitals and medevac helicopters.",
+      "featured": false,
+      "certifications": [
+        "IEC 60601-1-2 Medical Electrical Safety",
+        "MIL-STD-810G Drop Tested",
+        "CE 0123"
+      ],
+      "specs": [
+        {
+          "label": "Parameters",
+          "value": "3/5-Lead ECG, SpO2, NIBP, Respiration, Temp"
+        },
+        {
+          "label": "Display Unit",
+          "value": "12.1\" Anti-Glare Sunlight-Readable Color TFT"
+        },
+        {
+          "label": "Battery Runtime",
+          "value": "8.5 Hours Continuous Operation"
+        },
+        {
+          "label": "Drop Resistance",
+          "value": "1.2 Meter Shock-Proof Bumper Case"
+        },
+        {
+          "label": "Connectivity",
+          "value": "Wi-Fi / Ethernet HL7 Hospital Gateway"
+        }
+      ],
+      "leadTime": "20–35 Days",
+      "origin": "Germany / Japan OEM",
+      "warranty": "3 Years Full Replacement",
+      "imageUrl": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "crop-sprayer-precision",
+      "slug": "crop-sprayer-precision",
+      "name": "Precision Crop Sprayer PCS-1200",
+      "category": "Agriculture",
+      "sectorId": "industry",
+      "tagline": "Tractor-mounted variable-rate agricultural sprayer.",
+      "description": "Heavy-duty industrial sprayer with stainless steel tank, GPS-guided pulse-width section control, and 18-meter hydraulic self-leveling boom designed for commercial agribusiness and national food security farms.",
+      "featured": false,
+      "certifications": [
+        "ISO 16122 Environmental Inspection",
+        "CE Machinery Directive"
+      ],
+      "specs": [
+        {
+          "label": "Tank Capacity",
+          "value": "1,200 Liter Grade 304 Stainless Steel"
+        },
+        {
+          "label": "Boom Length",
+          "value": "18 Meter Full Hydraulic Folding Boom"
+        },
+        {
+          "label": "Flow Rate Control",
+          "value": "Automatic PWM Variable Rate Spraying"
+        },
+        {
+          "label": "Nozzle Type",
+          "value": "Air-Induction Anti-Drift Ceramic Tips"
+        },
+        {
+          "label": "Guidance Link",
+          "value": "ISOBUS 11783 Terminal Compatibility"
+        }
+      ],
+      "leadTime": "30–45 Days",
+      "origin": "Italy / France Agri OEM",
+      "warranty": "2 Years Mechanical",
+      "imageUrl": "https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "ag-drone-ag200",
+      "slug": "ag-drone-ag200",
+      "name": "Agricultural Drone AG-200",
+      "category": "Agriculture",
+      "sectorId": "industry",
+      "tagline": "Heavy-lift spraying & hyperspectral mapping UAV.",
+      "description": "Autonomous hexacopter agricultural drone with 20-liter payload tank, RTK centimeter-precision positioning, terrain-following radar, and quick-swap smart batteries for large-scale pest control and yield optimization.",
+      "featured": true,
+      "certifications": [
+        "IP67 Waterproof Rating",
+        "ICAO Annex 2 Flight Standards",
+        "CE Certified"
+      ],
+      "specs": [
+        {
+          "label": "Payload Capacity",
+          "value": "20 Liters Liquid / 25 kg Granular"
+        },
+        {
+          "label": "Operational Coverage",
+          "value": "Up to 12 Hectares per Hour"
+        },
+        {
+          "label": "Positioning Precision",
+          "value": "RTK Horizontal ±1 cm, Vertical ±1.5 cm"
+        },
+        {
+          "label": "Obstacle Avoidance",
+          "value": "360° Spherical Radar + FPV Camera"
+        },
+        {
+          "label": "Battery System",
+          "value": "2x 18,000 mAh Fast-Charging (10 min)"
+        }
+      ],
+      "leadTime": "20–30 Days",
+      "origin": "Leading Aerial Robotics OEM",
+      "warranty": "1 Year Full Avionics",
+      "imageUrl": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "combine-harvester-ch450",
+      "slug": "combine-harvester-ch450",
+      "name": "Precision Combine Harvester CH-450",
+      "category": "Agriculture",
+      "sectorId": "industry",
+      "tagline": "High-throughput grain harvesting and moisture analysis system.",
+      "description": "Modern heavy-duty combine harvester engineered for grain, rice, and wheat cultivation with onboard real-time yield monitoring, GPS auto-steering, and low-loss threshing rotor.",
+      "featured": true,
+      "certifications": [
+        "ISO 4254-7 Agricultural Machinery Safety",
+        "CE Certified",
+        "OECD Tractor & Harvester Code"
+      ],
+      "specs": [
+        {
+          "label": "Header Width",
+          "value": "5.4 Meter Floating Flex Cutterbar"
+        },
+        {
+          "label": "Engine Output",
+          "value": "175 HP Turbocharged Tier-3 Diesel"
+        },
+        {
+          "label": "Grain Tank Capacity",
+          "value": "5,000 Liters with Fast Unloading Auger"
+        },
+        {
+          "label": "Threshing Mechanism",
+          "value": "Twin Axial Rotor with Variable Speed"
+        },
+        {
+          "label": "Telematics",
+          "value": "Integrated GPS Fleet & Fuel Telematics"
+        }
+      ],
+      "leadTime": "35–50 Days",
+      "origin": "European Union / Japan Agri OEM",
+      "warranty": "2 Years Powertrain & Hydraulics",
+      "imageUrl": "https://images.unsplash.com/photo-1595838796899-8a56f2a873e8?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "hyperspectral-soil-sensor",
+      "slug": "hyperspectral-soil-sensor",
+      "name": "IoT Smart Soil & Canopy Sensor Network",
+      "category": "Agriculture",
+      "sectorId": "industry",
+      "tagline": "Real-time soil moisture, NPK fertility and micro-climate telemetry station.",
+      "description": "Solar-powered wireless agricultural telemetry station providing multi-depth soil moisture profiling, electrical conductivity (EC), temperature, and ambient micro-climate monitoring for precision irrigation.",
+      "featured": false,
+      "certifications": [
+        "IP68 Sensor Probes / IP65 Station",
+        "LoRaWAN Certified",
+        "FCC / CE Compliant"
+      ],
+      "specs": [
+        {
+          "label": "Measurement Depths",
+          "value": "10cm, 30cm, 60cm, and 100cm Multi-Layer Probe"
+        },
+        {
+          "label": "Monitored Parameters",
+          "value": "Volumetric Water Content (VWC), Soil EC, Temperature, NPK"
+        },
+        {
+          "label": "Connectivity",
+          "value": "LoRaWAN Long-Range 15km / 4G LTE-M Cellular Fallback"
+        },
+        {
+          "label": "Power Supply",
+          "value": "Solar Panel with 5-Year LiFePO4 Battery"
+        },
+        {
+          "label": "Cloud Integration",
+          "value": "REST API / MQTT Telemetry Platform Dashboard"
+        }
+      ],
+      "leadTime": "15–25 Days",
+      "origin": "Germany / Netherlands OEM",
+      "warranty": "3 Years Sensor Integrity",
+      "imageUrl": "https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "vessels": [
+    {
+      "id": "patrol-boat-fpb24",
+      "slug": "patrol-boat-fpb24",
+      "name": "Fast Patrol Interceptor FPB-24",
+      "vesselType": "Coastal Patrol & Interception",
+      "tagline": "High-speed deep-V aluminum tactical interceptor.",
+      "description": "Engineered for littoral surveillance, anti-smuggling, and maritime border protection. High-grade marine 5083-H111 aluminum hull with ballistic cabin protection up to NIJ Level III. Powered by twin marine diesels driving waterjets for exceptional shallow-water maneuverability.",
+      "lengthOverall": "24.50 m",
+      "beam": "5.80 m",
+      "draft": "1.20 m",
+      "maxSpeed": "38.5 Knots",
+      "enginePower": "2x 1,600 BHP (MTU / MAN)",
+      "hullMaterial": "Marine Grade 5083-H111 Aluminum",
+      "classificationSociety": "Bureau Veritas / DNV",
+      "crewCapacity": 8,
+      "deliveryLeadTime": "8–10 Months",
+      "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1000&q=80",
+      "features": [
+        "Twin Hamilton Waterjets with vector thrust",
+        "Flir Gyro-stabilized thermal camera system",
+        "Remotely operated weapon station (RCWS) ready",
+        "Aft stern ramp for 5.5m RHIB launch & recovery"
+      ]
+    },
+    {
+      "id": "terminal-tugboat-tb3200",
+      "slug": "terminal-tugboat-tb3200",
+      "name": "Harbor Escort Tugboat TB-3200",
+      "vesselType": "ASD Escort & Harbor Tug",
+      "tagline": "65-tonne bollard pull Azimuth Stern Drive tug.",
+      "description": "Heavy-duty steel tugboat designed for ship assist, offshore escort, and harbor emergency response. Equipped with dual 360-degree rotatable Azimuth thrusters, heavy rubber fendering, and FiFi 1 firefighting monitors.",
+      "lengthOverall": "32.00 m",
+      "beam": "11.20 m",
+      "draft": "4.80 m",
+      "maxSpeed": "13.5 Knots",
+      "bollardPull": "65.0 Tonnes Ahead",
+      "enginePower": "2x 2,400 BHP @ 1000 RPM (Caterpillar)",
+      "hullMaterial": "Grade A Shipbuilding Structural Steel",
+      "classificationSociety": "Lloyds Register ✠ 100A1 Tug",
+      "crewCapacity": 10,
+      "deliveryLeadTime": "12–14 Months",
+      "imageUrl": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1000&q=80",
+      "features": [
+        "Rolls-Royce / Kongsberg ASD Thrusters",
+        "Hydraulic split-drum towing winch (150T brake)",
+        "FiFi 1 Water Cannon: 2,400 m³/h capacity",
+        "Oil dispersant spray boom system"
+      ]
+    },
+    {
+      "id": "offshore-support-osv48",
+      "slug": "offshore-support-osv48",
+      "name": "Offshore Supply Vessel OSV-48",
+      "vesselType": "Offshore Platform Supply & Towing",
+      "tagline": "Versatile 48m dynamic positioning support vessel.",
+      "description": "Designed for deep-sea platform logistics, liquid cargo transport, and subsea inspection support. Features large 250m² open aft deck, dynamic positioning (DP-1), and heavy deck crane.",
+      "lengthOverall": "48.00 m",
+      "beam": "12.50 m",
+      "draft": "3.60 m",
+      "maxSpeed": "14.0 Knots",
+      "bollardPull": "45.0 Tonnes",
+      "enginePower": "2x 2,000 BHP (Yanmar / Cummins)",
+      "hullMaterial": "All-Welded High Tensile Marine Steel",
+      "classificationSociety": "Bureau Veritas ✠ HULL ✠ MACH",
+      "crewCapacity": 24,
+      "deliveryLeadTime": "14–16 Months",
+      "imageUrl": "https://images.unsplash.com/photo-1505705694340-019e1e335916?auto=format&fit=crop&w=1000&q=80",
+      "features": [
+        "250 m² Deck cargo capacity (5 tonnes/m² load)",
+        "Kongsberg DP-1 Dynamic Positioning System",
+        "Hydraulic deck knuckle-boom crane (15T @ 12m)",
+        "Fuel oil and potable water bulk transfer manifolds"
+      ]
+    },
+    {
+      "id": "fire-boat-rfb18",
+      "slug": "fire-boat-rfb18",
+      "name": "Port Firefighting Vessel RFB-18",
+      "vesselType": "Emergency Port Fire & Rescue",
+      "tagline": "Rapid response high-output firefighting vessel.",
+      "description": "Rapid-intervention catamaran fire boat equipped with twin dual-monitor water/foam canons pumping 6,000 liters per minute, patient triage bay, and shallow draft for inner-harbor and canal operations.",
+      "lengthOverall": "18.20 m",
+      "beam": "5.20 m",
+      "draft": "0.95 m",
+      "maxSpeed": "28.0 Knots",
+      "enginePower": "2x 800 BHP Marine Turbo-Diesel",
+      "hullMaterial": "Aluminum 5083-H111",
+      "classificationSociety": "RINA / Bureau Veritas",
+      "crewCapacity": 4,
+      "deliveryLeadTime": "6–8 Months",
+      "imageUrl": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1000&q=80",
+      "features": [
+        "Dual remote-controlled roof monitors (6,000 L/min)",
+        "1,000 Liter integrated AFFF foam tank",
+        "Full perimeter water-curtain protection",
+        "Emergency medical response treatment bay"
+      ]
+    }
+  ],
+  "consultancy_categories": [
+    {
+      "id": "international",
+      "slug": "international",
+      "name": "International Consultancy",
+      "tagline": "Global OEM Representation & Cross-Border Sovereign Trade",
+      "description": "Advising defense ministries, foreign manufacturers, and multinational corporations on technology transfer, End-User Certificates (EUC), international trade compliance, and regional partnership agreements.",
+      "iconName": "Globe2"
+    },
+    {
+      "id": "it-telecom",
+      "slug": "it-telecom",
+      "name": "IT & Telecommunication",
+      "tagline": "Mission-Critical Comms, Data Centers & Cyber Infrastructure",
+      "description": "Architecting sovereign digital networks, tactical military radio backbones, Tier-III/IV edge data centers, encrypted communication systems, and cyber defense operation centers.",
+      "iconName": "Cpu"
+    },
+    {
+      "id": "project",
+      "slug": "project",
+      "name": "Project Consultancy",
+      "tagline": "Turnkey Industrial EPC & Heavy Machinery Feasibility",
+      "description": "Comprehensive project management and engineering advisory for high-capital infrastructure, naval shipyard modernizations, power generation facilities, and automated manufacturing plants.",
+      "iconName": "Briefcase"
+    },
+    {
+      "id": "tender",
+      "slug": "tender",
+      "name": "Tender Consultancy",
+      "tagline": "Government DGDP & Institutional Bidding Advisory",
+      "description": "Expert guidance on Directorate General Defence Purchase (DGDP) protocols, International Competitive Bidding (ICB), commercial valuation, compliant bid documentation, and contract execution.",
+      "iconName": "FileCheck"
+    },
+    {
+      "id": "real-estate-construction",
+      "slug": "real-estate-construction",
+      "name": "Real Estate & Construction",
+      "tagline": "Specialized Defense Cantonments & Marine Civil Infrastructure",
+      "description": "Structural engineering, marine berth construction, specialized high-security defense compounds, deep sea port facilities, and industrial park real estate feasibility studies.",
+      "iconName": "Building2"
+    }
+  ],
+  "consultancy_services": [
+    {
+      "id": "global-oem-representation",
+      "slug": "global-oem-representation",
+      "name": "Foreign OEM Representation & Trade Alliances",
+      "categoryId": "international",
+      "categoryName": "International Consultancy",
+      "tagline": "Tier-1 liaison connecting European, American & Asian manufacturers with sovereign buyers.",
+      "summary": "Strategic market entry and authorized agency representation for global defense, maritime, and aerospace manufacturers seeking accredited accreditation in Bangladesh and South Asia.",
+      "description": "Novas acts as the authorized domestic liaison for world-class OEMs across Europe, North America, and East Asia. We manage local regulatory vetting, defense ministry authorizations, technical symposium demonstrations, and commercial bid integration.",
+      "deliverables": [
+        "Accredited Ministry of Defence (MoD) local agent registration",
+        "Market opportunity assessment and long-term procurement pipeline forecasting",
+        "Representation at DGDP, Armed Forces Division (AFD), and paramilitary headquarters",
+        "Bilingual contract negotiation, banking guarantees, and Letter of Credit (LC) oversight",
+        "Dedicated domestic warranty and after-sales field support logistics"
+      ],
+      "targetClients": [
+        "International Defense Contractors (NATO/EU/US)",
+        "Naval Architecture & Marine Equipment Manufacturers",
+        "Heavy Industrial Plant & Machinery Exporters",
+        "Foreign Trade & Investment Development Agencies"
+      ],
+      "methodology": [
+        {
+          "step": "01",
+          "title": "Regulatory Compliance Audit",
+          "desc": "Verify local accreditation requirements, DGDP supplier eligibility, and bilateral export protocols."
+        },
+        {
+          "step": "02",
+          "title": "Stakeholder Engagement",
+          "desc": "Conduct formal capability presentations and technical workshops with military and civil end-user committees."
+        },
+        {
+          "step": "03",
+          "title": "Tender Pipeline Matching",
+          "desc": "Align OEM product catalogs with sovereign annual fiscal procurement schedules."
+        },
+        {
+          "step": "04",
+          "title": "Lifecycle Contract Execution",
+          "desc": "Oversee delivery, customs clearance, bonded warehouse inspection, and payment milestone releases."
+        }
+      ],
+      "standards": [
+        "DGDP Registered Agent Protocols",
+        "FCPA & UK Bribery Act Compliant",
+        "ISO 9001:2015 Quality Management"
+      ],
+      "duration": "Multi-Year Agency Agreement (Retainer / Milestone-Based)",
+      "leadAdvisors": "International Trade Division & Senior Ex-Military Logistics Officers",
+      "imageUrl": "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?auto=format&fit=crop&w=1200&q=80",
+      "featured": true
+    },
+    {
+      "id": "export-control-euc-licensing",
+      "slug": "export-control-euc-licensing",
+      "name": "Export Control, EUC & Sanctions Compliance",
+      "categoryId": "international",
+      "categoryName": "International Consultancy",
+      "tagline": "Navigating international non-proliferation laws and fast-track End-User Certificates.",
+      "summary": "Comprehensive legal and regulatory guidance for cross-border transfer of dual-use goods, defense hardware, and sensitive military technologies.",
+      "description": "We advise defense contractors and government purchasers through the complex web of BAFA (Germany), ITAR/EAR (USA), UK Export Control Joint Unit (ECJU), and EU Dual-Use regulations. We draft, verify, and shepherd End-User Certificates (EUC) to prevent customs delays or licensing rejections.",
+      "deliverables": [
+        "Bilateral End-User Certificate (EUC) drafting, vetting, and ministerial sign-off",
+        "Dual-use commodity classification (ECCN / Military List)",
+        "Sanctions screening and international non-proliferation verification",
+        "Dangerous Goods (DG) Class 1 hazardous transit permits and air/sea routing",
+        "Pre-shipment inspection (PSI) and chain-of-custody documentation"
+      ],
+      "targetClients": [
+        "Directorate General Defence Purchase (DGDP)",
+        "Armed Forces Ordnance & Armament Directorates",
+        "International Aerospace & Ballistic Manufacturers",
+        "Strategic Government Supply Corporations"
+      ],
+      "methodology": [
+        {
+          "step": "01",
+          "title": "Classification & Scope",
+          "desc": "Classify equipment under Wassenaar Arrangement and regional export control frameworks."
+        },
+        {
+          "step": "02",
+          "title": "Documentation Drafting",
+          "desc": "Prepare authenticated government End-User Undertakings and consular legalizations."
+        },
+        {
+          "step": "03",
+          "title": "Ministry Coordination",
+          "desc": "Liaise directly with foreign trade ministries for prompt license issuance."
+        },
+        {
+          "step": "04",
+          "title": "Customs & Port Handover",
+          "desc": "Execute secure port entry and verified handover to armed forces depots."
+        }
+      ],
+      "standards": [
+        "Wassenaar Arrangement Guidelines",
+        "ITAR / EAR Protocols",
+        "EU Dual-Use Regulation (EU) 2021/821"
+      ],
+      "duration": "4 to 8 Weeks per Consignment License",
+      "leadAdvisors": "Defense Legal Counsel & Maritime Trade Specialists",
+      "imageUrl": "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1200&q=80",
+      "featured": false
+    },
+    {
+      "id": "tactical-comms-c4isr",
+      "slug": "tactical-comms-c4isr",
+      "name": "Tactical Comms, C4ISR & Cyber Security Architecture",
+      "categoryId": "it-telecom",
+      "categoryName": "IT & Telecommunication",
+      "tagline": "Battlefield-ready encrypted radio mesh networks and sovereign cyber operations.",
+      "summary": "Design and implementation advisory for hardened tactical communications, border sensor grids, C4ISR command architectures, and mission-critical cybersecurity.",
+      "description": "Our telecommunication and defense electronics advisory unit helps military signals commands, police headquarters, and border forces design end-to-end secure communication ecosystems. We cover HF/VHF/UHF tactical radios, MANET IP mesh nodes, encrypted satellite links, and 24/7 Security Operations Centers (SOC).",
+      "deliverables": [
+        "C4ISR interoperability architecture blueprints and radio frequency (RF) planning",
+        "MANET self-healing mobile ad-hoc tactical data mesh network designs",
+        "Air-gapped modular Security Operations Center (SOC) engineering",
+        "Electronic Warfare (EW) counter-measure and signal jamming resilience audits",
+        "Encrypted voice, video, and drone telemetry integration blueprints"
+      ],
+      "targetClients": [
+        "Military Signals Corps & Joint Command Headquarters",
+        "Border Guard Telecommunication Directorates",
+        "National Police & Rapid Response Forces",
+        "Coast Guard Coastal Radar & VTS Commands"
+      ],
+      "methodology": [
+        {
+          "step": "01",
+          "title": "Electromagnetic Survey",
+          "desc": "Survey operating terrain, signal attenuation, and electronic threat landscape."
+        },
+        {
+          "step": "02",
+          "title": "System Architecture Design",
+          "desc": "Engineer multi-layer encrypted communication topology with zero single points of failure."
+        },
+        {
+          "step": "03",
+          "title": "Hardware Proof of Concept",
+          "desc": "Deploy field test beds for tactical range, throughput, and jamming resistance verification."
+        },
+        {
+          "step": "04",
+          "title": "Commissioning & Training",
+          "desc": "Deliver operator training curricula and sovereign key-management protocols."
+        }
+      ],
+      "standards": [
+        "MIL-STD-188-110D",
+        "FIPS 140-2 Level 3 Cryptography",
+        "STANAG 4285 / 5066",
+        "ISO/IEC 27001"
+      ],
+      "duration": "3 to 6 Months (Scoping to Field Integration)",
+      "leadAdvisors": "Principal Systems Architect & Military Electronics Engineers",
+      "imageUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+      "featured": true
+    },
+    {
+      "id": "telecom-backbone-datacenter",
+      "slug": "telecom-backbone-datacenter",
+      "name": "National Telecom Backbone & Tier-III/IV Data Centers",
+      "categoryId": "it-telecom",
+      "categoryName": "IT & Telecommunication",
+      "tagline": "High-throughput optical fiber, sovereign cloud, and carrier-grade infrastructure.",
+      "summary": "Engineering advisory for nationwide fiber optic transmission, submarine cable terminal landing, and fault-tolerant government data center facilities.",
+      "description": "We assist telecom operators, state utilities, and railway communications departments with high-capacity DWDM optical fiber transmission, wireless towers, power resilience, and Uptime Institute compliant Tier-III/IV data centers.",
+      "deliverables": [
+        "High-capacity DWDM/OTN optical transmission backbone network design",
+        "Tier-III & Tier-IV data center MEP (Mechanical, Electrical, Plumbing) specifications",
+        "Redundant N+1 and 2N cooling, backup diesel, and UPS architecture",
+        "Carrier-neutral interconnect and submarine cable landing station designs",
+        "Disaster Recovery (DR) and business continuity engineering"
+      ],
+      "targetClients": [
+        "Ministry of Posts, Telecommunications & Information Technology",
+        "National Telecom Transmission Network (NTTN) Operators",
+        "State-Owned Internet & Submarine Cable Enterprises",
+        "Large Banking & Financial Telecommunications Hubs"
+      ],
+      "methodology": [
+        {
+          "step": "01",
+          "title": "Capacity & Route Feasibility",
+          "desc": "Assess bandwidth growth projections, optical path loss, and geographical civil hazards."
+        },
+        {
+          "step": "02",
+          "title": "Detailed Engineering Design",
+          "desc": "Deliver complete architectural, electrical, fire suppression, and cooling designs."
+        },
+        {
+          "step": "03",
+          "title": "Tender Specification Prep",
+          "desc": "Draft comprehensive technical specifications for international EPC tenders."
+        },
+        {
+          "step": "04",
+          "title": "Site Supervision & Acceptance",
+          "desc": "Oversee factory acceptance tests (FAT) and site acceptance tests (SAT)."
+        }
+      ],
+      "standards": [
+        "TIA-942 Tier-III/IV",
+        "ITU-T G.652/G.655 Optical Specs",
+        "ASHRAE Thermal Guidelines",
+        "ISO 22301"
+      ],
+      "duration": "6 to 12 Months",
+      "leadAdvisors": "Chartered Telecom Engineers & Data Center Certified Specialists",
+      "imageUrl": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80",
+      "featured": false
+    },
+    {
+      "id": "naval-shipyard-modernization",
+      "slug": "naval-shipyard-modernization",
+      "name": "Naval Shipyard & Marine Engineering Project Advisory",
+      "categoryId": "project",
+      "categoryName": "Project Consultancy",
+      "tagline": "Dry dock modernization, CNC plasma cutting line, and slipway engineering.",
+      "summary": "Turnkey technical advisory for naval dockyards, commercial slipways, and aluminum/steel vessel fabrication facility upgrades.",
+      "description": "Novas leverages deep naval architecture expertise to consult on shipyard master planning, gantry crane load calculations, automated plate-cutting machinery, and vessel construction project management.",
+      "deliverables": [
+        "Shipyard master layout planning and material workflow optimization",
+        "Dry dock civil extension and 1,500+ DWT slipway load calculations",
+        "Automated CNC plasma cutting bed and welding bay specification",
+        "Class Society (Bureau Veritas, Lloyds) certification roadmaps",
+        "Milestone-based project management for new vessel construction programs"
+      ],
+      "targetClients": [
+        "Naval Dockyards & Coast Guard Maintenance Depots",
+        "Commercial Shipbuilding & Ship Repair Yards",
+        "Port Authority Marine Engineering Departments",
+        "Inland Waterways Transportation Authorities"
+      ],
+      "methodology": [
+        {
+          "step": "01",
+          "title": "Facility Audit",
+          "desc": "Inspect existing fabrication bays, lifting apparatus, and slipway slope mechanics."
+        },
+        {
+          "step": "02",
+          "title": "Process Modernization Plan",
+          "desc": "Design upgraded workflow integrating automated cutting, shot-blasting, and modular assembly."
+        },
+        {
+          "step": "03",
+          "title": "Machinery Procurement",
+          "desc": "Specify high-capacity gantry cranes, plate rollers, and welding power units."
+        },
+        {
+          "step": "04",
+          "title": "Class Certification Sign-Off",
+          "desc": "Ensure all facilities meet international classification society shipbuilding audits."
+        }
+      ],
+      "standards": [
+        "Bureau Veritas Shipyard Rules",
+        "Lloyds Register Marine Guidelines",
+        "ISO 3834 Welding Quality"
+      ],
+      "duration": "6 to 18 Months",
+      "leadAdvisors": "Senior Naval Architects & Marine Structural Engineers",
+      "imageUrl": "https://images.unsplash.com/photo-1505705694340-019e1e335916?auto=format&fit=crop&w=1200&q=80",
+      "featured": true
+    },
+    {
+      "id": "heavy-epc-machinery-advisory",
+      "slug": "heavy-epc-machinery-advisory",
+      "name": "Turnkey Heavy Industry & EPC Plant Automation",
+      "categoryId": "project",
+      "categoryName": "Project Consultancy",
+      "tagline": "Power plant auxiliaries, heavy steel manufacturing, and SCADA automation.",
+      "summary": "Comprehensive engineering consultancy for large-scale energy projects, steel mills, and automated manufacturing installations.",
+      "description": "We assist industrial promoters and EPC consortiums in evaluating heavy machinery specifications, process automation, high-capacity diesel/gas turbine generation, and industrial effluent control systems.",
+      "deliverables": [
+        "Industrial plant technical feasibility and machinery CAPEX/OPEX modeling",
+        "SCADA automation and industrial PLC instrumentation engineering",
+        "High-capacity backup power generation (multi-megawatt diesel/gas) design",
+        "Heavy piping, high-pressure pump skids, and valve manifold blueprints",
+        "OEM technical audit and site erection supervision"
+      ],
+      "targetClients": [
+        "Power Generation & Independent Power Producers (IPP)",
+        "Steel Re-Rolling & Heavy Fabrication Conglomerates",
+        "Petrochemical & Fertilizer Processing Complexes",
+        "Cement & Heavy Mineral Extraction Plants"
+      ],
+      "methodology": [
+        {
+          "step": "01",
+          "title": "Energy & Mass Balance",
+          "desc": "Perform thermal, hydraulic, and electrical load simulations."
+        },
+        {
+          "step": "02",
+          "title": "Equipment Sourcing Plan",
+          "desc": "Evaluate Tier-1 OEM machinery bids across efficiency, reliability, and lifecycle cost."
+        },
+        {
+          "step": "03",
+          "title": "Installation Supervision",
+          "desc": "Direct on-site alignment, vibration testing, and electrical synchronization."
+        },
+        {
+          "step": "04",
+          "title": "Commissioning & Handover",
+          "desc": "Validate guaranteed output metrics during formal performance test runs."
+        }
+      ],
+      "standards": [
+        "ASME Section VIII",
+        "IEC 61508 / 61511 Safety Integrity",
+        "ISO 50001 Energy Management"
+      ],
+      "duration": "4 to 12 Months",
+      "leadAdvisors": "Mechanical & EPC Senior Consulting Engineers",
+      "imageUrl": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80",
+      "featured": false
+    },
+    {
+      "id": "dgdp-defense-tender-bidding",
+      "slug": "dgdp-defense-tender-bidding",
+      "name": "DGDP Defense Tender Preparation & Bid Compliance",
+      "categoryId": "tender",
+      "categoryName": "Tender Consultancy",
+      "tagline": "Flawless compliance for high-stakes military and paramilitary procurement tenders.",
+      "summary": "Specialized advisory for local and international contractors bidding under the Directorate General Defence Purchase (DGDP), Armed Forces Division (AFD), and government institutional formats.",
+      "description": "Securing defense tenders requires zero-defect compliance with complex General Conditions of Contract (GCC), Special Conditions of Contract (SCC), technical specification matrixes, and performance bank guarantees. Novas brings 13+ years of firsthand procurement experience to eliminate bid disqualifications and maximize winning margins.",
+      "deliverables": [
+        "Full technical compliance matrix mapping against tender Schedule of Requirements (SOR)",
+        "OEM authorization letters, warranty endorsements, and lab certification dossier prep",
+        "Tender security (Earnest Money Deposit) and Performance Guarantee (PG) advisory",
+        "DGDP Schedule ‘A’ and Schedule ‘B’ documentation vetting",
+        "Representation during pre-bid meetings and technical clarification sessions"
+      ],
+      "targetClients": [
+        "International Defense Hardware & Tactical OEMs",
+        "Domestic Prime Vendors & Military Contractors",
+        "Paramilitary & Police Specialized Procurement Desks",
+        "United Nations Peacekeeping Mission Equipment Suppliers"
+      ],
+      "methodology": [
+        {
+          "step": "01",
+          "title": "Tender Dissection",
+          "desc": "Extract strict mandatory requirements, penalty clauses, and delivery milestones."
+        },
+        {
+          "step": "02",
+          "title": "Technical Dossier Building",
+          "desc": "Compile certified test reports, military ballistic certificates, and OEM agency letters."
+        },
+        {
+          "step": "03",
+          "title": "Commercial Strategy",
+          "desc": "Model competitive pricing, foreign currency exchange risk, and duty/tax structures."
+        },
+        {
+          "step": "04",
+          "title": "Post-Award Execution",
+          "desc": "Manage factory pre-shipment inspections, harbor trials, and formal acceptance protocols."
+        }
+      ],
+      "standards": [
+        "DGDP Standard Procurement Guidelines",
+        "Public Procurement Act (PPA) / PPR-2008",
+        "UN Procurement Standards"
+      ],
+      "duration": "2 to 6 Weeks per Tender Tender Cycle",
+      "leadAdvisors": "Former Senior DGDP Officers & Defense Procurement Specialists",
+      "imageUrl": "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1200&q=80",
+      "featured": true
+    },
+    {
+      "id": "icb-government-procurement",
+      "slug": "icb-government-procurement",
+      "name": "International Competitive Bidding (ICB) Advisory",
+      "categoryId": "tender",
+      "categoryName": "Tender Consultancy",
+      "tagline": "World Bank, ADB, and sovereign institutional mega-tender management.",
+      "summary": "Advisory services for major multilateral development bank (MDB) tenders and national infrastructure procurement programs.",
+      "description": "We guide international consortiums and domestic EPC firms through International Competitive Bidding (ICB) and National Competitive Bidding (NCB) financed by the World Bank, Asian Development Bank (ADB), JICA, and Bangladesh government ministries.",
+      "deliverables": [
+        "Comprehensive ICB bid document preparation (FIDIC Yellow / Silver Book formats)",
+        "Joint Venture (JV) and Consortium agreement structuring with foreign partners",
+        "Bid price estimation, customs duty escalation, and advance payment security planning",
+        "Environmental and Social Impact Assessment (ESIA) tender compliance",
+        "Post-tender defense of technical proposals during evaluation committee hearings"
+      ],
+      "targetClients": [
+        "Civil Works & EPC Construction Consortiums",
+        "Port Authorities & Marine Terminal Operators",
+        "Power Grid & Energy Transmission Contractors",
+        "Railway & Highway Infrastructure Developers"
+      ],
+      "methodology": [
+        {
+          "step": "01",
+          "title": "Eligibility & Prequalification",
+          "desc": "Validate financial turnover, credit line availability, and technical past experience."
+        },
+        {
+          "step": "02",
+          "title": "Proposal Authoring",
+          "desc": "Draft technical methodology, work breakdown structures, and equipment mobilization schedules."
+        },
+        {
+          "step": "03",
+          "title": "Risk Allocation",
+          "desc": "Identify latent commercial risks in liquidated damages, force majeure, and exchange rates."
+        },
+        {
+          "step": "04",
+          "title": "Submission & Follow-Up",
+          "desc": "Coordinate sealed envelope or e-GP tender submission with full chain of custody."
+        }
+      ],
+      "standards": [
+        "FIDIC Contract Conditions",
+        "World Bank Procurement Regulations",
+        "ADB Procurement Policy (2017)"
+      ],
+      "duration": "4 to 10 Weeks",
+      "leadAdvisors": "Infrastructure Procurement Counsel & Senior Quantity Surveyors",
+      "imageUrl": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=80",
+      "featured": false
+    },
+    {
+      "id": "specialized-defense-compounds",
+      "slug": "specialized-defense-compounds",
+      "name": "Specialized Defense Cantonments & Secure Facility Engineering",
+      "categoryId": "real-estate-construction",
+      "categoryName": "Real Estate & Construction",
+      "tagline": "Hardened compounds, ballistic-rated bunkers, and military infrastructure.",
+      "summary": "Architectural, civil, and physical security design advisory for high-security defense bases, ammunition depots, and command centers.",
+      "description": "Novas provides specialized civil engineering and facility security consultancy for sovereign armed forces installations, secure cantonment sectors, underground command bunkers, ballistic-resistant perimeter structures, and climate-controlled ammunition storage depots.",
+      "deliverables": [
+        "Blast-resistant and ballistic-rated architectural structural designs",
+        "High-security perimeter intrusion detection system (PIDS) integration",
+        "Underground reinforced bunker and hardened shelter structural calculations",
+        "Ammunition & explosive ordnance depot (magazine) safety layout planning",
+        "SCIF (Sensitive Compartmented Information Facility) acoustic & TEMPEST shielding"
+      ],
+      "targetClients": [
+        "Military Engineering Services (MES) & Base Engineers",
+        "Armed Forces Division Construction Wings",
+        "Special Forces Tactical Training Centers",
+        "Strategic Government Security Headquarters"
+      ],
+      "methodology": [
+        {
+          "step": "01",
+          "title": "Threat Vulnerability Assessment",
+          "desc": "Model explosive blast radii, ballistic penetration threats, and forced-entry vectors."
+        },
+        {
+          "step": "02",
+          "title": "Hardened Structural Design",
+          "desc": "Engineer reinforced concrete structures meeting international military survivability criteria."
+        },
+        {
+          "step": "03",
+          "title": "Security Envelope Integration",
+          "desc": "Design biometric access airlocks, perimeter surveillance, and backup power grids."
+        },
+        {
+          "step": "04",
+          "title": "Quality Assurance Supervision",
+          "desc": "Monitor material testing (cube strength, rebar tensile testing) during site construction."
+        }
+      ],
+      "standards": [
+        "UFC 4-010-01 DoD Anti-Terrorism Standards",
+        "MIL-HDBK-1013/1A",
+        "BNBC (Bangladesh National Building Code)"
+      ],
+      "duration": "6 to 18 Months",
+      "leadAdvisors": "Chartered Structural Engineers & Defense Infrastructure Consultants",
+      "imageUrl": "https://images.unsplash.com/photo-1541888946425-d0fbb186156a?auto=format&fit=crop&w=1200&q=80",
+      "featured": true
+    },
+    {
+      "id": "coastal-berth-port-infrastructure",
+      "slug": "coastal-berth-port-infrastructure",
+      "name": "Deep Sea Port, Coastal Berth & Marine Civil Engineering",
+      "categoryId": "real-estate-construction",
+      "categoryName": "Real Estate & Construction",
+      "tagline": "Heavy-duty jetty berths, breakwaters, and maritime terminal civil works.",
+      "summary": "Civil and geotechnical engineering consultancy for port terminals, coastal jetties, dredging operations, and marine industrial real estate.",
+      "description": "Advising port authorities, private terminal operators, and economic zone developers on marine structural engineering, jetty piling, dredging hydrodynamics, breakwater construction, and heavy container yard paving.",
+      "deliverables": [
+        "Marine jetty structural design for container and bulk cargo vessels",
+        "Geotechnical borehole analysis and marine piling load capacity modeling",
+        "Coastal hydrodynamics, wave tranquility, and breakwater feasibility studies",
+        "Heavy container yard pavement and gantry crane rail foundation engineering",
+        "Environmental Impact Assessment (EIA) and coastal regulatory clearances"
+      ],
+      "targetClients": [
+        "Port Authorities (Chattogram, Mongla, Payra, Matarbari)",
+        "Private Container Terminal Concessionaires",
+        "Special Economic Zone (SEZ) Marine Infrastructure Wings",
+        "Offshore Energy Supply Base Operators"
+      ],
+      "methodology": [
+        {
+          "step": "01",
+          "title": "Bathymetric & Geotechnical Survey",
+          "desc": "Map subsea seabed topography, tidal currents, and soil bearing strata."
+        },
+        {
+          "step": "02",
+          "title": "Structural Maritime Modeling",
+          "desc": "Simulate vessel berthing energy, wave impact loads, and seismic soil liquefaction."
+        },
+        {
+          "step": "03",
+          "title": "Engineering Drawings & BOQ",
+          "desc": "Deliver detailed structural CAD drawings, bill of quantities (BOQ), and tender packages."
+        },
+        {
+          "step": "04",
+          "title": "Construction Oversight",
+          "desc": "Conduct pile driving monitoring, concrete durability inspections, and cathodic protection tests."
+        }
+      ],
+      "standards": [
+        "PIANC Marine Guidelines",
+        "BS 6349 Maritime Structures",
+        "ASTM Marine Piling Standards"
+      ],
+      "duration": "6 to 24 Months",
+      "leadAdvisors": "Senior Coastal Civil Engineers & Geotechnical Maritime Specialists",
+      "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1200&q=80",
+      "featured": false
+    }
+  ],
+  "projects": [
+    {
+      "id": "naval-interceptor-craft-patrol",
+      "title": "High-Speed Tactical Naval Interceptor Workboats",
+      "category": "maritime",
+      "sectorName": "Maritime & Naval",
+      "client": "National Naval & Coast Guard Authorities",
+      "location": "Chittagong & Mongla Coastal Waters, Bangladesh",
+      "year": "2024",
+      "image": "/assets/hero/hero-maritime-Z9Kk4jOd.jpg",
+      "summary": "Turnkey delivery and systems integration of high-speed naval interceptor workboats equipped with marine X-band surveillance radar and tactical VHF comms.",
+      "description": "Novas BD spearheaded the full technical procurement, naval architecture assessment, and shipyard integration for rapid response naval interceptor workboats.\n    Designed for shallow draft operations, anti-piracy interception, and EEZ (Exclusive Economic Zone) maritime policing, each vessel features reinforced marine-grade 5083-H116 aluminium hulls and integrated twin diesel waterjet propulsion systems.\n    Our specialized 24-member engineering team provided on-site sea trial commissioning, hydrographic sonar calibration, and dedicated after-sales operational training for maritime crews.",
+      "features": [
+        "Twin marine diesel inboard engines with high-thrust waterjet propulsion",
+        "Reinforced 5083-H116 marine aluminium hull construction",
+        "High-definition X-band tactical surveillance radar array",
+        "MIL-STD-810H encrypted tactical VHF/HF marine communications suite",
+        "FLIR thermal night-vision optical camera for 24/7 all-weather operations",
+        "SOLAS-compliant life-saving apparatus and deployable rescue gear"
+      ],
+      "specs": [
+        {
+          "label": "Length Overall (LOA)",
+          "value": "14.80 meters"
+        },
+        {
+          "label": "Beam (Width)",
+          "value": "3.90 meters"
+        },
+        {
+          "label": "Maximum Speed",
+          "value": "38+ Knots"
+        },
+        {
+          "label": "Operating Range",
+          "value": "320 Nautical Miles"
+        },
+        {
+          "label": "Hull Material",
+          "value": "Marine Grade 5083-H116 Aluminium"
+        },
+        {
+          "label": "Compliance Standard",
+          "value": "IMO / SOLAS / MED-B"
+        }
+      ],
+      "status": "Delivered"
+    },
+    {
+      "id": "tactical-border-surveillance-radar",
+      "title": "Border Surveillance Radar & Electro-Optical Reconnaissance",
+      "category": "defence",
+      "sectorName": "Defence & Tactical",
+      "client": "Border Security Forces & Defense Ministry",
+      "location": "Eastern & Northern Frontier Sectors, Bangladesh",
+      "year": "2023 - 2024",
+      "image": "/assets/hero/hero-defence-CzOJrdZI.jpg",
+      "summary": "Deployment of tactical perimeter ground-surveillance radar with co-mounted long-range thermal electro-optical tracking cameras for 24/7 sovereign border security.",
+      "description": "A mission-critical national security project involving the procurement, tactical siting, and hardware integration of ground surveillance radar (GSR) towers.\n    The system delivers automated moving target indicator (MTI) alerts across rugged terrain, integrating AI-assisted target classification to distinguish between human operators, vehicles, and wildlife.\n    Novas executed end-to-end logistics, hardened tactical power backup systems, and military-grade fiber optic network integration into regional command centers.",
+      "features": [
+        "Continuous 360° ground surveillance with automated target classification",
+        "Cooled thermal imaging camera with detection range exceeding 12 km",
+        "MIL-STD-810H environmental hardening (-20°C to +55°C operation)",
+        "Automated radar-slew-to-cue optical tracking system",
+        "Autonomous solar & tactical generator hybrid backup power",
+        "Encrypted secure C4ISR telemetry datalink to central headquarters"
+      ],
+      "specs": [
+        {
+          "label": "Detection Range",
+          "value": "Up to 15 km (Vehicles) / 8 km (Personnel)"
+        },
+        {
+          "label": "Azimuth Coverage",
+          "value": "360° Continuous Rotation"
+        },
+        {
+          "label": "Thermal Sensor",
+          "value": "640x512 Cooled InSb MWIR"
+        },
+        {
+          "label": "Standards",
+          "value": "MIL-STD-810H, IP67 Waterproof"
+        },
+        {
+          "label": "Power Autonomy",
+          "value": "72 Hours Continuous Unattended"
+        },
+        {
+          "label": "Origin Verification",
+          "value": "Certified Global OEM"
+        }
+      ],
+      "status": "Completed"
+    },
+    {
+      "id": "military-frontline-medical-trauma",
+      "title": "Frontline Tactical Combat Casualty Care (TCCC) Program",
+      "category": "defence",
+      "sectorName": "Medical & Humanitarian",
+      "client": "Armed Forces Medical Directorate & UN Peacekeeping Mission",
+      "location": "Dhaka Central Medical Depot & Field Deployments",
+      "year": "2024",
+      "image": "/assets/hero/hero-medical-DBJtfXpF.jpg",
+      "summary": "Large-scale procurement and supply of tactical trauma kits, deployable field monitors, and specialized surgical casualty units for national and UN deployment.",
+      "description": "Equipping tactical response units and peacekeeping battalions with gold-standard Tactical Combat Casualty Care (TCCC) medical supplies.\n    Novas sourced and delivered vacuum-sealed modular trauma packs, combat-grade hemostatic dressings, tourniquets, portable vital-sign monitors, and deployable disaster relief medical shelters.\n    Each package undergoes rigorous humidity and shelf-life verification to ensure 100% operational readiness in harsh field conditions.",
+      "features": [
+        "CoTCCC-approved combat application tourniquets and hemostatic gauze",
+        "Hardened portable multi-parameter field patient monitors",
+        "Negative-pressure deployable field casualty treatment units",
+        "Vacuum-sealed, weather-proof ballistic nylon IFAK trauma pouches",
+        "Cold-chain compliant medical transport containers with temperature loggers",
+        "Hands-on tactical trauma simulator kits for military medical personnel"
+      ],
+      "specs": [
+        {
+          "label": "Compliance Standard",
+          "value": "CoTCCC Guidelines & CE/FDA Class II"
+        },
+        {
+          "label": "Operating Temperature",
+          "value": "-10°C to +50°C"
+        },
+        {
+          "label": "Packaging Barrier",
+          "value": "Hermetically Sealed MIL-SPEC Foil"
+        },
+        {
+          "label": "Lead Time Delivered",
+          "value": "21 Days Express Air Procurement"
+        },
+        {
+          "label": "Shelf Life Guarantee",
+          "value": "5 Years Minimum Expiry"
+        },
+        {
+          "label": "Training Support",
+          "value": "Certified Clinical Masterclasses"
+        }
+      ],
+      "status": "Completed"
+    },
+    {
+      "id": "shipyard-heavy-industrial-cnc-automation",
+      "title": "Automated Shipyard CNC Plasma Cutting & Fabrication Line",
+      "category": "industry",
+      "sectorName": "Heavy Industry & Shipyard",
+      "client": "Strategic Naval & Commercial Shipyard Facility",
+      "location": "Narayanganj & Chittagong Shipyards, Bangladesh",
+      "year": "2023",
+      "image": "/assets/hero/hero-logistics-sV_p9M_H.jpg",
+      "summary": "Turnkey EPC installation of high-precision heavy industrial gantry CNC plasma plate-cutting machines and automated submerged-arc welding stations.",
+      "description": "Modernizing sovereign shipbuilding capabilities through the design, procurement, structural foundation engineering, and commissioning of heavy CNC plasma cutting tables.\n    The automated fabrication facility handles high-tensile steel plates up to 50mm thickness, reducing vessel hull fabrication lead times by 40% while ensuring sub-millimeter cutting accuracy.\n    Novas supplied complete CAD/CAM nesting software suites, turnkey dust extraction systems, and certified operator training.",
+      "features": [
+        "Dual-gantry heavy duty CNC plasma and oxy-fuel cutting stations",
+        "Multi-torch high-definition plasma power units (400 Ampere)",
+        "Automated beveling head for weld-preparation edge cutting",
+        "Integrated down-draft eco fume filtration and dust extraction",
+        "High-speed digital servo drives with optical rail alignment",
+        "Comprehensive 3-year OEM preventive maintenance package"
+      ],
+      "specs": [
+        {
+          "label": "Working Cutting Width",
+          "value": "6.0 Meters Effective"
+        },
+        {
+          "label": "Working Cutting Length",
+          "value": "32.0 Meters Continuous Rail"
+        },
+        {
+          "label": "Plate Thickness",
+          "value": "Up to 50mm (Plasma) / 150mm (Oxy)"
+        },
+        {
+          "label": "Positioning Accuracy",
+          "value": "±0.1 mm/meter"
+        },
+        {
+          "label": "Control System",
+          "value": "Industrial CNC with Automated Nesting"
+        },
+        {
+          "label": "Certification",
+          "value": "ISO 9001:2015 & CE Industrial Machinery"
+        }
+      ],
+      "status": "Completed"
+    },
+    {
+      "id": "c4isr-secure-cyber-defense-center",
+      "title": "Sovereign Defense Cyber Operations Center (SOC/NOC)",
+      "category": "consultancy",
+      "sectorName": "ICT & Cybersecurity",
+      "client": "National Strategic Infrastructure Authority",
+      "location": "Dhaka, Bangladesh",
+      "year": "2024 - 2025",
+      "image": "/assets/hero/hero-cyber-BQaYidYs.jpg",
+      "summary": "Turnkey consultancy, architectural design, and deployment of a hardened 24/7 Security Operations Center with zero-trust sovereign network architecture.",
+      "description": "Protecting critical national infrastructure against sophisticated advanced persistent threats (APTs).\n    Novas delivered complete consultancy, hardware rack procurement, electromagnetic pulse (EMP) shielding guidance, and next-generation SIEM integration.\n    The project encompasses unified threat intelligence dashboards, air-gapped forensic malware analysis workstations, and biometric access control perimeters.",
+      "features": [
+        "Tier-III resilient server infrastructure with high-availability clustering",
+        "Next-generation enterprise SIEM with automated threat containment",
+        "Hardened cryptographic hardware security modules (HSM)",
+        "Air-gapped digital forensics investigation laboratory",
+        "High-density ergonomic video wall display array for command bridge operators",
+        "ISO 27001 & NIST 800-53 compliance auditing and protocol drafting"
+      ],
+      "specs": [
+        {
+          "label": "Facility Standard",
+          "value": "Tier III Data Center Topology"
+        },
+        {
+          "label": "Throughput Capacity",
+          "value": "100 Gbps Core Switching Fabrics"
+        },
+        {
+          "label": "Security Architecture",
+          "value": "Zero-Trust Military Architecture"
+        },
+        {
+          "label": "SLA Uptime",
+          "value": "99.982% Mission Availability"
+        },
+        {
+          "label": "Compliance",
+          "value": "ISO 27001:2022 / NIST Cybersecurity Framework"
+        },
+        {
+          "label": "Engineering Support",
+          "value": "24/7 Tier-1/2/3 Response Desk"
+        }
+      ],
+      "status": "Active"
+    },
+    {
+      "id": "tactical-uav-coastal-reconnaissance",
+      "title": "Tactical Border & Maritime Reconnaissance UAV Fleet",
+      "category": "geospatial",
+      "sectorName": "Aerospace & Geospatial",
+      "client": "Maritime Security & Environmental Surveillance Authority",
+      "location": "Bay of Bengal Littoral Zone & Sundarbans Reserve",
+      "year": "2024",
+      "image": "/assets/hero/hero-aerospace-CdirWyJV.jpg",
+      "summary": "Supply of long-endurance vertical takeoff (VTOL) surveillance drones equipped with high-resolution multispectral and thermal sensors for coastal policing.",
+      "description": "Integrating unmanned aerial systems for coastal surveillance, illegal maritime traffic interdiction, and environmental disaster monitoring.\n    The VTOL fixed-wing UAV platforms combine the takeoff convenience of multi-rotors with the high-speed transit and multi-hour endurance of fixed wings.\n    Equipped with gyro-stabilized optical/thermal sensor gimbals and encrypted satellite/COFDM communication datalinks, the fleet provides live real-time situational awareness.",
+      "features": [
+        "Vertical Takeoff and Landing (VTOL) capability with zero runway requirement",
+        "Over 3.5 hours continuous flight endurance per mission",
+        "Triple-sensor gyro-stabilized gimbal: 4K daylight, 640x512 thermal, laser rangefinder",
+        "Encrypted COFDM datalink with 80+ km line-of-sight transmission",
+        "Automated waypoint navigation with failsafe return-to-base protocols",
+        "Ruggedized ground control station (GCS) laptops with dual sunlight-readable displays"
+      ],
+      "specs": [
+        {
+          "label": "Wingspan",
+          "value": "3.20 Meters"
+        },
+        {
+          "label": "Endurance",
+          "value": "210 Minutes Continuous"
+        },
+        {
+          "label": "Cruising Speed",
+          "value": "75 km/h (Max 120 km/h)"
+        },
+        {
+          "label": "Operating Radius",
+          "value": "80+ km Direct Telemetry"
+        },
+        {
+          "label": "Wind Resistance",
+          "value": "Beaufort Scale 6 (Up to 45 km/h)"
+        },
+        {
+          "label": "Sensors",
+          "value": "EO/IR Dual Payload + Laser Rangefinder"
+        }
+      ],
+      "status": "Active"
+    }
+  ],
+  "sectors": [
+    {
+      "id": "defence",
+      "slug": "defence",
+      "name": "Defence",
+      "headline": "Force Protection & Tactical Superiority",
+      "tagline": "Certified tactical systems, personal protection, and mission equipment for armed forces and security operators.",
+      "description": "Novas supplies battle-proven force protection systems, body armor, optronics, and secure tactical communications to South Asian defense ministries, coast guards, and special operations units with complete end-user documentation and certification traceability.",
+      "iconName": "Shield",
+      "accentColor": "#f59e0b",
+      "capabilities": [
+        "NIJ Level III & IV Ballistic Armor & Composite Helmets",
+        "Gen-3 Autogated Night Vision & Thermal Optronics",
+        "Tactical Radio Intercoms & Active Hearing Headsets",
+        "Special Reconnaissance & Border Surveillance UAVs",
+        "EOD (Explosive Ordnance Disposal) Protection Suits"
+      ],
+      "targetOperators": [
+        "Ministry of Defence & Joint Headquarters",
+        "Army Logistics & Ordnance Corps",
+        "Border Guard & Rapid Response Battalions",
+        "Special Weapons & Tactical Law Enforcement"
+      ],
+      "complianceStandards": [
+        "NIJ 0101.06",
+        "MIL-STD-810H",
+        "STANAG 2920",
+        "ISO 9001:2015"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": "maritime",
+      "slug": "maritime",
+      "name": "Maritime",
+      "headline": "Naval Engineering & Blue Economy Systems",
+      "tagline": "Naval platforms, marine electronics, port security, and hydrographic instrumentation.",
+      "description": "Bridging world-class naval architecture and marine equipment OEMs with regional navies, coast guards, port authorities, and offshore contractors. From custom aluminum patrol boats to multibeam bathymetric sonars and IMO/SOLAS navigation radar arrays.",
+      "iconName": "Anchor",
+      "accentColor": "#0ea5e9",
+      "capabilities": [
+        "Naval Workboat & Fast Interceptor Patrol Vessels",
+        "X-Band & S-Band IMO/SOLAS Navigation Radars",
+        "High-Resolution Multibeam Sonar & Hydrographic Systems",
+        "Davit-Launched Self-Righting Life Rafts (SOLAS/MED-B)",
+        "Aids to Navigation (AtoN) & Harbor Vessel Traffic Monitoring"
+      ],
+      "targetOperators": [
+        "Naval Fleet Commands & Coast Guard Commands",
+        "Port Authorities & Harbor Master Divisions",
+        "Offshore Energy Support & Marine Salvage",
+        "Hydrographic Department & Survey Institutes"
+      ],
+      "complianceStandards": [
+        "IMO / SOLAS",
+        "MED-B Type Approved",
+        "Bureau Veritas",
+        "Lloyds Register"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1505705694340-019e1e335916?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": "industry",
+      "slug": "industry",
+      "name": "Industry",
+      "headline": "Turnkey Machinery & Industrial Automation",
+      "tagline": "Heavy machinery, plant automation, and turnkey project supply for energy and manufacturing.",
+      "description": "Supplying heavy industrial plant equipment, process control hardware, backup power generation, and specialized fabrication machinery for high-output manufacturing, energy generation, and infrastructure megaprojects.",
+      "iconName": "Factory",
+      "accentColor": "#f97316",
+      "capabilities": [
+        "Heavy Industrial Pumps & Valve Manifolds",
+        "Turbine & High-Capacity Diesel Power Generators",
+        "Automated CNC Metal Cutting & Fabrication Centers",
+        "Process Control SCADA & Instrumentation Panels",
+        "Overhead Gantry Cranes & Heavy Material Handling"
+      ],
+      "targetOperators": [
+        "Power Generation & Energy Utilities",
+        "Shipyard & Heavy Steel Fabrication Plants",
+        "Petrochemical Refineries & Chemical Facilities",
+        "National Infrastructure EPC Contractors"
+      ],
+      "complianceStandards": [
+        "CE Marked",
+        "ASME Boiler Code",
+        "IEC 61508",
+        "ISO 14001"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": "geospatial",
+      "slug": "geospatial",
+      "name": "Geospatial",
+      "headline": "Spatial Intelligence & Earth Observation",
+      "tagline": "GIS, remote sensing, GNSS surveying, and photogrammetric spatial intelligence.",
+      "description": "Empowering national survey organizations, urban planning directorates, and defense intelligence with high-precision GNSS receivers, LiDAR drones, satellite imagery analysis, and enterprise spatial database infrastructure.",
+      "iconName": "Map",
+      "accentColor": "#10b981",
+      "capabilities": [
+        "Multi-Constellation RTK GNSS Survey Receivers",
+        "Airborne & Mobile LiDAR Mapping Systems",
+        "Sub-Meter High-Resolution Satellite Imagery Feeds",
+        "Geographic Information Systems (GIS) Enterprise Software",
+        "Digital Twin & 3D Terrain Elevation Modeling"
+      ],
+      "targetOperators": [
+        "Survey of Bangladesh & Cartography Directorates",
+        "Defense Geospatial Intelligence Units",
+        "Water Resources & Coastal Flood Modeling Authorities",
+        "Transportation & Highway Design Institutes"
+      ],
+      "complianceStandards": [
+        "OGC Standards",
+        "ISO 19115",
+        "RTCM 3.x",
+        "WGS84 Certified"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": "ict",
+      "slug": "ict",
+      "name": "ICT",
+      "headline": "Mission-Critical Digital & Cyber Infrastructure",
+      "tagline": "Enterprise IT, cybersecurity, tactical cloud, and hardened communications.",
+      "description": "Engineering resilient, air-gapped data centers, encrypted communication backbones, and zero-trust cybersecurity operations centers for government ministries, military commands, and critical national infrastructure operators.",
+      "iconName": "Cpu",
+      "accentColor": "#8b5cf6",
+      "capabilities": [
+        "Encrypted Tactical Radios & IP Mesh Networks",
+        "Air-Gapped Modular Edge Data Centers",
+        "Threat Hunting & Cyber Command Operations Centers (SOC)",
+        "Fiber Optic High-Throughput Long-Haul Transmission",
+        "Defense-Grade Biometric Access Control & Surveillance"
+      ],
+      "targetOperators": [
+        "Ministry of ICT & Digital Governance Agencies",
+        "Military Signals & Communications Directorates",
+        "National Cyber Security Agencies",
+        "Central Bank & Financial Telecommunications Hubs"
+      ],
+      "complianceStandards": [
+        "NIST SP 800-53",
+        "ISO 27001",
+        "FIPS 140-2 Level 3",
+        "Common Criteria EAL4+"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": "logistics-supply",
+      "slug": "logistics-supply",
+      "name": "Logistics & Supply",
+      "headline": "Global Sourcing & Secure Last-Mile Logistics",
+      "tagline": "Strategic sourcing, bonded warehousing, hazardous cargo, and turnkey commissioning.",
+      "description": "Managing end-to-end global supply chains from OEM factory floor in Europe, North America, or East Asia to secure delivery, customs clearance, bonded warehousing, and on-site testing anywhere across South Asia.",
+      "iconName": "Truck",
+      "accentColor": "#ec4899",
+      "capabilities": [
+        "Dangerous Goods (DG) Class 1 Explosive Freight Handling",
+        "Direct Factory OEM Sourcing & Verified Chain of Custody",
+        "Chittagong & Mongla Port Customs Expedited Clearance",
+        "Climate-Controlled Bonded High-Security Warehousing",
+        "On-Site Engineering Commissioning & Operator Training"
+      ],
+      "targetOperators": [
+        "Directorate General of Defence Purchase (DGDP)",
+        "State-Owned Strategic Enterprises & Corporations",
+        "International Humanitarian Relief Missions",
+        "Commercial Shipping & Energy Concessionaires"
+      ],
+      "complianceStandards": [
+        "IATA DGR",
+        "IMDG Code",
+        "WCO SAFE Framework",
+        "ISO 28000"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80"
+    }
+  ],
+  "company_info": {
+    "name": "Nova Solutions BD",
+    "shortName": "NOVAS",
+    "founder": "Mr. Raoson Alom",
+    "founderTitle": "Founder & CEO, Novas",
+    "founderImage": "/assets/founder.png",
+    "foundedYear": "2012",
+    "foundedMonth": "July 2012",
+    "teamSize": "24-member specialized engineering & research team",
+    "tagline": "Achieving excellence in the field of science, technology and procurement",
+    "subheading": "Novas started in July 2012. Our eventual destination is to serve Bangladesh by achieving excellence in the field of science and technology.",
+    "address": "House No-412, Road No-29, Flat-5A-5B-4B, Mohakhali DOHS, Dhaka, Bangladesh",
+    "phone": "+8801711264822",
+    "landline": "9832552",
+    "email": "info@novasbd.com",
+    "corporateRegistry": "REG-BD-NOVAS-2012",
+    "mission": "To contribute to technological development in Bangladesh by introducing unmatched technologies with expert knowledge and providing execution support.",
+    "vision": "To become a globally recognized technology leader by expanding access to international markets, fostering innovation, and creating value through high-quality, future-ready solutions that empower communities and industries.",
+    "values": [
+      {
+        "name": "Honesty",
+        "description": "Transparency in every transaction and partnership."
+      },
+      {
+        "name": "Integrity",
+        "description": "Uncompromising adherence to international engineering and defense standards."
+      },
+      {
+        "name": "Commitment",
+        "description": "Dedicated post-sale execution and multi-year lifecycle operational support."
+      }
+    ],
+    "shipyardCapacity": {
+      "dryDockLength": "120m",
+      "slipwayCapacity": "1,500 DWT",
+      "fabricationBays": "4 Heavy Bays",
+      "craneRating": "50-Tonne Gantry",
+      "cncCuttingBed": "24m x 4m Plasma",
+      "annualSteelOutput": "8,000 Metric Tons"
+    },
+    "bestInPillars": [
+      {
+        "id": "commitment",
+        "badge": "BEST",
+        "keyword": "COMMITMENT",
+        "title": "BEST COMMITMENT",
+        "description": "We ensure an excellent commitment with our valuable vendors, government ministries, and armed forces.",
+        "icon": "Handshake"
+      },
+      {
+        "id": "planning",
+        "badge": "BEST",
+        "keyword": "PLANNING",
+        "title": "BEST PLANNING",
+        "description": "Equipment planning services include comprehensive evaluation of all equipment, facility needs, and operational oversight.",
+        "icon": "ListCheck"
+      },
+      {
+        "id": "deal",
+        "badge": "BEST",
+        "keyword": "DEAL",
+        "title": "BEST DEAL",
+        "description": "Efforts focused on achieving \"win-win\" solutions, fostering mutual benefits, cost-efficiency, and positive long-term outcomes.",
+        "icon": "HelpingHands"
+      },
+      {
+        "id": "service",
+        "badge": "BEST",
+        "keyword": "SERVICE",
+        "title": "BEST SERVICE",
+        "description": "End-to-end engineering support, tailored technology solutions, and dedicated 24/7 on-site after-sales technical maintenance.",
+        "icon": "Tools"
+      }
+    ],
+    "blueprintSteps": [
+      {
+        "step": "01",
+        "title": "Operational Assessment",
+        "description": "Consultation with military, naval, or industrial procurement committees to define exact technical specifications, doctrine requirements, and delivery milestones."
+      },
+      {
+        "step": "02",
+        "title": "OEM Vetting & Verification",
+        "description": "Direct procurement from NATO, European, and American certified manufacturers, verifying ballistic lab certifications, SOLAS approvals, and warranty integrity."
+      },
+      {
+        "step": "03",
+        "title": "Compliance & Export Licensing",
+        "description": "Navigating international export control regimes, end-user certificates (EUC), dangerous goods compliance, and DGDP tender document protocols."
+      },
+      {
+        "step": "04",
+        "title": "Secure Port & Air Freight",
+        "description": "Chartered maritime and air cargo logistics through Chittagong Port, Mongla Port, and Hazrat Shahjalal International Airport with secured escort chains."
+      },
+      {
+        "step": "05",
+        "title": "Commissioning & Support",
+        "description": "On-site harbor sea-trials, weapon and radar calibration, user maintenance training, and guaranteed multi-year spare-parts sustainment."
+      }
+    ],
+    "certifications": [
+      "ISO 9001:2015 Quality Management",
+      "ISO 14001:2015 Environmental Systems",
+      "ISO 45001:2018 Occupational Health & Safety",
+      "NATO / MIL-STD-810H Compliant Vendor",
+      "IMO / SOLAS & MED-B Certified Marine Systems"
+    ]
+  }
+}
