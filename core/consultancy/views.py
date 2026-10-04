@@ -1,3 +1,6 @@
+from .serializers import UpdateConsultancyServiceSerializer
+from .services import update_consultancy_service
+from core.content_views import ContentMutationMixin, ContentEditorPermission
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -72,6 +75,8 @@ class ConsultancyCategoryDetailAPIView(APIView):
 
 
 class ConsultancyServiceListCreateAPIView(APIView):
+    permission_classes = [ContentEditorPermission]
+
     def get(self, request):
         queryset = ConsultancyService.objects.select_related('category').all()
 
@@ -118,7 +123,12 @@ class ConsultancyServiceListCreateAPIView(APIView):
             )
 
 
-class ConsultancyServiceDetailAPIView(APIView):
+class ConsultancyServiceDetailAPIView(ContentMutationMixin, APIView):
+    content_model = ConsultancyService
+    update_serializer = UpdateConsultancyServiceSerializer
+    response_serializer = ResponseConsultancyServiceSerializer
+    update_service = staticmethod(update_consultancy_service)
+
     def get(self, request, slug):
         service = get_object_or_404(
             ConsultancyService.objects.select_related('category'),

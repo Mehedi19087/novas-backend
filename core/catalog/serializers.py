@@ -151,3 +151,19 @@ class ResponseVesselSerializer(serializers.ModelSerializer):
                 pass
         return obj.image_url or ''
 
+
+
+class UpdateProductSerializer(CreateProductSerializer):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for field in self.fields.values():
+            if not field.required and isinstance(field, serializers.CharField):
+                field.allow_blank = True
+
+
+class UpdateVesselSerializer(CreateVesselSerializer):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for field in self.fields.values():
+            if not field.required and isinstance(field, serializers.CharField):
+                field.allow_blank = True

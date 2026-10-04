@@ -1,3 +1,8 @@
+from .serializers import UpdateVesselSerializer
+from .services import update_vessel
+from .serializers import UpdateProductSerializer
+from .services import update_product
+from core.content_views import ContentMutationMixin, ContentEditorPermission
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -67,6 +72,8 @@ class CategoryDetailAPIView(APIView):
 
 
 class ProductListCreateAPIView(APIView):
+    permission_classes = [ContentEditorPermission]
+
     def get(self, request):
         queryset = Product.objects.select_related('category').prefetch_related('specs').all()
 
@@ -121,7 +128,12 @@ class ProductListCreateAPIView(APIView):
             )
 
 
-class ProductDetailAPIView(APIView):
+class ProductDetailAPIView(ContentMutationMixin, APIView):
+    content_model = Product
+    update_serializer = UpdateProductSerializer
+    response_serializer = ResponseProductSerializer
+    update_service = staticmethod(update_product)
+
     def get(self, request, slug):
         product = get_object_or_404(
             Product.objects.select_related('category').prefetch_related('specs'),
@@ -138,6 +150,8 @@ class ProductDetailAPIView(APIView):
 
 
 class VesselListCreateAPIView(APIView):
+    permission_classes = [ContentEditorPermission]
+
     def get(self, request):
         vessels = Vessel.objects.all().order_by('name')
         serializer = ResponseVesselSerializer(vessels, many=True)
@@ -175,7 +189,12 @@ class VesselListCreateAPIView(APIView):
             )
 
 
-class VesselDetailAPIView(APIView):
+class VesselDetailAPIView(ContentMutationMixin, APIView):
+    content_model = Vessel
+    update_serializer = UpdateVesselSerializer
+    response_serializer = ResponseVesselSerializer
+    update_service = staticmethod(update_vessel)
+
     def get(self, request, slug):
         vessel = get_object_or_404(Vessel, slug=slug)
         serializer = ResponseVesselSerializer(vessel)

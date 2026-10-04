@@ -85,3 +85,20 @@ def create_vessel(validated_data: dict) -> Vessel:
         if 'slug' in error_message:
             raise ValidationError({"slug": "A vessel with this slug already exists."})
         raise ValidationError({"non_field_errors": ["Could not create vessel due to database constraints."]})
+
+
+from core.content_services import update_content
+
+
+def update_product(product, validated_data):
+    data = dict(validated_data)
+    if 'category_id' in data:
+        try:
+            data['category'] = Category.objects.get(pk=data.pop('category_id'))
+        except Category.DoesNotExist:
+            raise ValidationError({'category_id': 'Category does not exist.'})
+    return update_content(product, data, ProductSpecification, 'product')
+
+
+def update_vessel(vessel, validated_data):
+    return update_content(vessel, validated_data)

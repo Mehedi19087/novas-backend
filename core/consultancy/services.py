@@ -44,3 +44,18 @@ def create_consultancy_service(validated_data: dict) -> ConsultancyService:
         if 'slug' in error_message:
             raise ValidationError({"slug": "A service with this slug already exists."})
         raise ValidationError({"non_field_errors": ["Could not create consultancy service due to database constraints."]})
+
+
+from core.content_services import update_content
+
+
+def update_consultancy_service(service, validated_data):
+    data = dict(validated_data)
+    if 'category_id' in data:
+        key = data.pop('category_id')
+        category = ConsultancyCategory.objects.filter(category_id=key).first() or ConsultancyCategory.objects.filter(slug=key).first()
+        if not category:
+            raise ValidationError({'category_id': 'Consultancy category does not exist.'})
+        data['category'] = category
+    data['category_name'] = data.get('category', service.category).name
+    return update_content(service, data)

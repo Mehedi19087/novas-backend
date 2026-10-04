@@ -1,3 +1,6 @@
+from .serializers import UpdateProjectSerializer
+from .services import update_project
+from core.content_views import ContentMutationMixin, ContentEditorPermission
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -9,6 +12,8 @@ from .services import create_project
 
 
 class ProjectListCreateAPIView(APIView):
+    permission_classes = [ContentEditorPermission]
+
     def get(self, request):
         queryset = Project.objects.prefetch_related('specs').all()
 
@@ -63,7 +68,12 @@ class ProjectListCreateAPIView(APIView):
             )
 
 
-class ProjectDetailAPIView(APIView):
+class ProjectDetailAPIView(ContentMutationMixin, APIView):
+    content_model = Project
+    update_serializer = UpdateProjectSerializer
+    response_serializer = ResponseProjectSerializer
+    update_service = staticmethod(update_project)
+
     def get(self, request, slug):
         project = get_object_or_404(
             Project.objects.prefetch_related('specs'),

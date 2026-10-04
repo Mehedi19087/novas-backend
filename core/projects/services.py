@@ -31,3 +31,10 @@ def create_project(validated_data: dict) -> Project:
         if 'slug' in error_message:
             raise ValidationError({"slug": "A project with this slug already exists."})
         raise ValidationError({"non_field_errors": ["Could not create project due to database constraints."]})
+
+
+from core.content_services import update_content
+
+
+def update_project(project, validated_data):
+    return update_content(project, validated_data, ProjectSpec, 'project')

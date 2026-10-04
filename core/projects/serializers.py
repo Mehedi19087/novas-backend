@@ -63,3 +63,11 @@ class ResponseProjectSerializer(serializers.ModelSerializer):
                 pass
         return obj.image or ''
 
+
+
+class UpdateProjectSerializer(CreateProjectSerializer):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for field in self.fields.values():
+            if not field.required and isinstance(field, serializers.CharField):
+                field.allow_blank = True

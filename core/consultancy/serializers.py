@@ -82,3 +82,11 @@ class ResponseConsultancyServiceSerializer(serializers.ModelSerializer):
                 pass
         return obj.image_url or ''
 
+
+
+class UpdateConsultancyServiceSerializer(CreateConsultancyServiceSerializer):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for field in self.fields.values():
+            if not field.required and isinstance(field, serializers.CharField):
+                field.allow_blank = True
