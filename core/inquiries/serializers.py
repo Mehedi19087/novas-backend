@@ -54,7 +54,7 @@ class CreateContactMessageSerializer(serializers.Serializer):
 class ResponseContactMessageSerializer(serializers.ModelSerializer):
     class Meta:
         model = ContactMessage
-        fields = ['id', 'full_name', 'email', 'phone', 'company', 'subject', 'message', 'created_at']
+        fields = ['id', 'full_name', 'email', 'phone', 'company', 'subject', 'message', 'is_read', 'created_at']
 
 
 class CreateNewsletterSerializer(serializers.Serializer):
@@ -67,3 +67,15 @@ class ResponseNewsletterSerializer(serializers.ModelSerializer):
     class Meta:
         model = NewsletterSubscription
         fields = ['id', 'email', 'is_active', 'subscribed_at']
+
+
+class UpdateRFQStatusSerializer(serializers.Serializer):
+    status = serializers.ChoiceField(choices=RFQInquiry.STATUS_CHOICES)
+
+
+class UpdateContactReadSerializer(serializers.Serializer):
+    is_read = serializers.BooleanField()
+
+
+class UpdateSubscriptionSerializer(serializers.Serializer):
+    is_active = serializers.BooleanField()

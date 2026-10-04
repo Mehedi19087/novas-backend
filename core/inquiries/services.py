@@ -46,3 +46,22 @@ def subscribe_newsletter(validated_data: dict) -> NewsletterSubscription:
         return NewsletterSubscription.objects.create(**validated_data)
     except IntegrityError as e:
         raise ValidationError({"email": ["This email address is already subscribed."]})
+
+
+def update_inquiry_state(instance, validated_data):
+    try:
+        with transaction.atomic():
+            for field, value in validated_data.items():
+                setattr(instance, field, value)
+            instance.save()
+        return instance
+    except IntegrityError as exc:
+        raise ValidationError({'detail': 'Could not update this submission.'}) from exc
+
+
+def delete_inquiry(instance):
+    try:
+        with transaction.atomic():
+            instance.delete()
+    except IntegrityError as exc:
+        raise ValidationError({'detail': 'Could not delete this submission.'}) from exc
