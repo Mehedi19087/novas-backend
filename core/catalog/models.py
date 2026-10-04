@@ -1,3 +1,4 @@
+from django.core.validators import MinValueValidator
 from django.db import models
 
 
@@ -20,6 +21,7 @@ class Category(models.Model):
 
 
 class Product(models.Model):
+    priority = models.PositiveIntegerField(default=100, db_index=True, validators=[MinValueValidator(1)], help_text='Lower numbers appear first. 1 is highest priority; 100 is the default.')
     sku = models.CharField(max_length=100, unique=True)
     slug = models.SlugField(max_length=150, unique=True)
     name = models.CharField(max_length=255)
@@ -38,7 +40,7 @@ class Product(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
-        ordering = ['-featured', 'name']
+        ordering = ['priority', '-featured', 'name', 'id']
 
     def __str__(self):
         return self.name
@@ -69,6 +71,7 @@ class ProductSpecification(models.Model):
 
 
 class Vessel(models.Model):
+    priority = models.PositiveIntegerField(default=100, db_index=True, validators=[MinValueValidator(1)], help_text='Lower numbers appear first. 1 is highest priority; 100 is the default.')
     vessel_id = models.CharField(max_length=100, unique=True)
     slug = models.SlugField(max_length=100, unique=True)
     name = models.CharField(max_length=255)
@@ -92,7 +95,7 @@ class Vessel(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
-        ordering = ['name']
+        ordering = ['priority', 'name', 'id']
 
     def __str__(self):
         return self.name

@@ -26,14 +26,16 @@ class ProductAdmin(ContentAdmin):
     form = ProductAdminForm
     autocomplete_fields = ('category',)
     list_select_related = ('category',)
+    list_editable = ('priority',)
     fieldsets = (
+        ('Display priority', {'fields': ('priority',)}),
         ('Product and category', {'fields': ('name', 'slug', 'sku', 'category', 'sector_id')}),
         ('Product image', {'fields': ('image_file', 'image_preview', 'image_url'), 'description': 'Upload an image from your computer. The uploaded file takes priority over the optional image URL.'}),
         ('Product description', {'fields': ('tagline', 'description')}),
         ('Supply and certification', {'fields': ('certifications', 'lead_time', 'origin', 'warranty')}),
         ('Homepage visibility', {'fields': ('featured',)}),
     )
-    list_display = ('name', 'sku', 'category', 'sector_id', 'featured', 'created_at')
+    list_display = ('name', 'sku', 'category', 'sector_id', 'featured', 'created_at', 'priority')
     prepopulated_fields = {'slug': ('name',)}
     search_fields = ('name', 'sku', 'description')
     list_filter = ('category', 'sector_id', 'featured')
@@ -49,13 +51,15 @@ class ProductSpecificationAdmin(admin.ModelAdmin):
 @admin.register(Vessel)
 class VesselAdmin(ContentAdmin):
     form = VesselAdminForm
+    list_editable = ('priority',)
     fieldsets = (
+        ('Display priority', {'fields': ('priority',)}),
         ('Vessel identity', {'fields': ('name', 'slug', 'vessel_id', 'vessel_type')}),
         ('Vessel image', {'fields': ('image_file', 'image_preview', 'image_url'), 'description': 'Upload an image from your computer. The uploaded file takes priority over the optional image URL.'}),
         ('Vessel description', {'fields': ('tagline', 'description', 'features')}),
         ('Dimensions and performance', {'fields': ('length_overall', 'beam', 'draft', 'max_speed', 'bollard_pull', 'engine_power', 'hull_material', 'classification_society', 'crew_capacity')}),
         ('Delivery', {'fields': ('delivery_lead_time',)}),
     )
-    list_display = ('name', 'vessel_id', 'vessel_type', 'length_overall', 'max_speed', 'delivery_lead_time')
+    list_display = ('name', 'vessel_id', 'vessel_type', 'length_overall', 'max_speed', 'delivery_lead_time', 'priority')
     prepopulated_fields = {'slug': ('name',)}
     search_fields = ('name', 'vessel_id', 'vessel_type', 'description')

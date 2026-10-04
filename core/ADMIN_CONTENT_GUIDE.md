@@ -21,3 +21,7 @@ Enter deliverables, features, certifications and other list fields one item per 
 Existing identifiers and slugs must remain stable for existing website links. Product sector IDs should match sector records, such as `defence` or `industry`.
 
 These changes organize the backend admin and preserve existing API data formats; they require no database migration. Deployment is required before the live admin changes. Some frontend sections currently use hardcoded data (including sector content); updating those pages to fetch the API is separate from this admin change. Adding a new category does not automatically add a link to the frontend's hardcoded navbar.
+
+## Priority ordering
+
+Every product, vessel, project and consultancy service has a Priority number. Use 1 for the first entry, 2 for the next, and so on. The default is 100. Lower numbers sort first within category and sector lists; equal priorities retain the previous ordering. In the website admin, use Edit → Priority → Save. Django admin also allows editing priority directly in its list. Apply the included database migrations when deploying this change.

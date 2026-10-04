@@ -1,7 +1,9 @@
+from django.core.validators import MinValueValidator
 from django.db import models
 
 
 class Project(models.Model):
+    priority = models.PositiveIntegerField(default=100, db_index=True, validators=[MinValueValidator(1)], help_text='Lower numbers appear first. 1 is highest priority; 100 is the default.')
     STATUS_CHOICES = [
         ('Completed', 'Completed'),
         ('Active', 'Active'),
@@ -36,7 +38,7 @@ class Project(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
-        ordering = ['sort_order', '-year', 'title']
+        ordering = ['priority', 'sort_order', '-year', 'title', 'id']
 
     def __str__(self):
         return f"[{self.category}] {self.title}"

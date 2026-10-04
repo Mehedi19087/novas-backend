@@ -16,6 +16,7 @@ class CreateProjectSpecItemSerializer(serializers.Serializer):
 
 
 class CreateProjectSerializer(serializers.Serializer):
+    priority = serializers.IntegerField(required=False, default=100, min_value=1, max_value=2147483647)
     project_id = serializers.CharField(
         max_length=150,
         validators=[UniqueValidator(queryset=Project.objects.all())]
@@ -49,6 +50,7 @@ class ResponseProjectSerializer(serializers.ModelSerializer):
     class Meta:
         model = Project
         fields = [
+            'priority',
             'id', 'project_id', 'slug', 'title', 'category', 'sector_name',
             'client', 'location', 'year', 'image', 'summary', 'description',
             'features', 'specs', 'status', 'is_featured', 'sort_order',

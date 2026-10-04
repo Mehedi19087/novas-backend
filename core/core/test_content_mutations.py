@@ -92,3 +92,40 @@ class ContentMutationTests(APITestCase):
         self.assertEqual(self.service.category, category)
         self.assertEqual(self.service.category_name, 'Tender')
         self.assertEqual(self.service.methodology[0]['title'], 'Review')
+
+    def test_priority_controls_every_content_list_and_can_be_changed(self):
+        self.client.force_authenticate(self.staff)
+        cases = [
+            ('product-list-create', 'product-detail', self.product, 'sku', '?category=equipment&sector=defence'),
+            ('vessel-list-create', 'vessel-detail', self.vessel, 'vessel_id', ''),
+            ('project-list-create', 'project-detail', self.project, 'project_id', '?category=defence'),
+            ('consultancy-service-list-create', 'consultancy-service-detail', self.service, 'service_id', '?category=project'),
+        ]
+        for list_route, detail_route, original, identifier, query in cases:
+            with self.subTest(route=list_route):
+                self.assertEqual(original.priority, 100)
+                other = type(original).objects.get(pk=original.pk)
+                other.pk = None
+                other.slug = 'priority-first'
+                setattr(other, identifier, 'priority-first')
+                if hasattr(other, 'name'): other.name = 'ZZZ priority first'
+                if hasattr(other, 'title'): other.title = 'ZZZ priority first'
+                other.priority = 1
+                other.save()
+                url = reverse(list_route) + query
+                data = self.client.get(url).data['data']
+                self.assertEqual([row['id'] for row in data], [other.pk, original.pk])
+                self.assertEqual(data[0]['priority'], 1)
+                response = self.client.patch(reverse(detail_route, kwargs={'slug': other.slug}), {'priority': 200}, format='json')
+                self.assertEqual(response.status_code, 200, response.data)
+                data = self.client.get(url).data['data']
+                self.assertEqual([row['id'] for row in data], [original.pk, other.pk])
+
+    def test_invalid_priorities_are_rejected_for_every_content_type(self):
+        self.client.force_authenticate(self.staff)
+        for route, instance, _ in self.entries:
+            for priority in (0, -1, 1.5, 'abc', 2147483648):
+                response = self.client.patch(reverse(route, kwargs={'slug':instance.slug}), {'priority':priority}, format='json')
+                self.assertEqual(response.status_code, 400, (route, priority, response.data))
+                instance.refresh_from_db()
+                self.assertEqual(instance.priority, 100)

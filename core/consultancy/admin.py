@@ -22,14 +22,16 @@ class ConsultancyServiceAdmin(ContentAdmin):
     exclude = ('category_name',)
     autocomplete_fields = ('category',)
     list_select_related = ('category',)
+    list_editable = ('priority',)
     fieldsets = (
+        ('Display priority', {'fields': ('priority',)}),
         ('Service and consultancy category', {'fields': ('name', 'slug', 'service_id', 'category')}),
         ('Service image', {'fields': ('image_file', 'image_preview', 'image_url'), 'description': 'Upload an image from your computer. The uploaded file takes priority over the optional image URL.'}),
         ('Service description', {'fields': ('tagline', 'summary', 'description')}),
         ('Scope and delivery', {'fields': ('deliverables', 'target_clients', 'methodology', 'standards', 'duration', 'lead_advisors')}),
         ('Visibility and order', {'fields': ('featured', 'sort_order')}),
     )
-    list_display = ('name', 'service_id', 'category', 'duration', 'featured', 'sort_order')
+    list_display = ('name', 'service_id', 'category', 'duration', 'featured', 'sort_order', 'priority')
     prepopulated_fields = {'slug': ('name',)}
     search_fields = ('name', 'service_id', 'summary', 'description')
     list_filter = ('category', 'featured')

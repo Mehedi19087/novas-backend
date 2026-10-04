@@ -27,7 +27,7 @@ class ContentAdminTests(TestCase):
     def test_consultancy_manual_upload_and_category_change(self):
         buffer = BytesIO()
         Image.new('RGB', (8, 8), color='blue').save(buffer, 'PNG')
-        data = dict(name='Engineering advisory', slug='engineering-advisory', service_id='advisory', category=self.category.pk, tagline='Engineering', summary='Service summary', description='Service details', deliverables='Feasibility review\nImplementation plan', target_clients='Shipyards', methodology='01 | Discovery | Review requirements', standards='ISO 9001', duration='6 months', lead_advisors='Engineers', sort_order=0)
+        data = dict(priority=100, name='Engineering advisory', slug='engineering-advisory', service_id='advisory', category=self.category.pk, tagline='Engineering', summary='Service summary', description='Service details', deliverables='Feasibility review\nImplementation plan', target_clients='Shipyards', methodology='01 | Discovery | Review requirements', standards='ISO 9001', duration='6 months', lead_advisors='Engineers', sort_order=0)
         with tempfile.TemporaryDirectory() as media, override_settings(MEDIA_ROOT=media):
             data['image_file'] = SimpleUploadedFile('service.png', buffer.getvalue(), content_type='image/png')
             response = self.client.post(reverse('admin:consultancy_consultancyservice_add'), data)

@@ -1,3 +1,4 @@
+from django.core.validators import MinValueValidator
 from django.db import models
 
 
@@ -21,6 +22,7 @@ class ConsultancyCategory(models.Model):
 
 
 class ConsultancyService(models.Model):
+    priority = models.PositiveIntegerField(default=100, db_index=True, validators=[MinValueValidator(1)], help_text='Lower numbers appear first. 1 is highest priority; 100 is the default.')
     service_id = models.CharField(max_length=100, unique=True)
     slug = models.SlugField(max_length=150, unique=True)
     name = models.CharField(max_length=255)
@@ -47,7 +49,7 @@ class ConsultancyService(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
-        ordering = ['sort_order', '-featured', 'name']
+        ordering = ['priority', 'sort_order', '-featured', 'name', 'id']
 
     def __str__(self):
         return f"{self.category.name} - {self.name}"

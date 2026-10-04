@@ -52,6 +52,7 @@ class CreateProductSpecItemSerializer(serializers.Serializer):
 
 
 class CreateProductSerializer(serializers.Serializer):
+    priority = serializers.IntegerField(required=False, default=100, min_value=1, max_value=2147483647)
     sku = serializers.CharField(
         max_length=100,
         validators=[UniqueValidator(queryset=Product.objects.all())]
@@ -84,6 +85,7 @@ class ResponseProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
         fields = [
+            'priority',
             'id', 'sku', 'slug', 'name', 'category', 'sector_id',
             'tagline', 'description', 'featured', 'certifications',
             'specs', 'lead_time', 'origin', 'warranty', 'image_url',
@@ -102,6 +104,7 @@ class ResponseProductSerializer(serializers.ModelSerializer):
 # --- Vessel Serializers ---
 
 class CreateVesselSerializer(serializers.Serializer):
+    priority = serializers.IntegerField(required=False, default=100, min_value=1, max_value=2147483647)
     vessel_id = serializers.CharField(
         max_length=100,
         validators=[UniqueValidator(queryset=Vessel.objects.all())]
@@ -136,6 +139,7 @@ class ResponseVesselSerializer(serializers.ModelSerializer):
     class Meta:
         model = Vessel
         fields = [
+            'priority',
             'id', 'vessel_id', 'slug', 'name', 'vessel_type', 'tagline',
             'description', 'length_overall', 'beam', 'draft', 'max_speed',
             'bollard_pull', 'engine_power', 'hull_material',

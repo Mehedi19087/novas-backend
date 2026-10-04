@@ -29,6 +29,7 @@ class ResponseConsultancyCategorySerializer(serializers.ModelSerializer):
 
 
 class CreateConsultancyServiceSerializer(serializers.Serializer):
+    priority = serializers.IntegerField(required=False, default=100, min_value=1, max_value=2147483647)
     service_id = serializers.CharField(
         max_length=100,
         validators=[UniqueValidator(queryset=ConsultancyService.objects.all())]
@@ -67,6 +68,7 @@ class ResponseConsultancyServiceSerializer(serializers.ModelSerializer):
     class Meta:
         model = ConsultancyService
         fields = [
+            'priority',
             'id', 'service_id', 'slug', 'name', 'category', 'category_name',
             'tagline', 'summary', 'description', 'deliverables',
             'target_clients', 'methodology', 'standards', 'duration',

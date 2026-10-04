@@ -153,7 +153,7 @@ class VesselListCreateAPIView(APIView):
     permission_classes = [ContentEditorPermission]
 
     def get(self, request):
-        vessels = Vessel.objects.all().order_by('name')
+        vessels = Vessel.objects.all()
         serializer = ResponseVesselSerializer(vessels, many=True)
         return Response(
             {
