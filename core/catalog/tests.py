@@ -1,4 +1,5 @@
 from django.urls import reverse
+from django.contrib.auth import get_user_model
 from rest_framework import status
 from rest_framework.test import APITestCase
 from .models import Category, Product, Vessel
@@ -31,6 +32,7 @@ class CatalogAPITestCase(APITestCase):
         self.assertGreaterEqual(len(response.data["data"]), 1)
 
     def test_create_category(self):
+        self.client.force_authenticate(get_user_model().objects.create_user(username="editor", is_staff=True))
         url = reverse('category-list-create')
         data = {
             "name": "New Agriculture",

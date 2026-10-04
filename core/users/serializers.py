@@ -42,3 +42,18 @@ class LoginSerializer(serializers.Serializer):
 
         attrs['user'] = user
         return attrs
+
+
+class ImageUploadSerializer(serializers.Serializer):
+    image = serializers.ImageField()
+    folder = serializers.ChoiceField(
+        choices=['novas/uploads', 'novas/products', 'novas/vessels', 'novas/projects', 'novas/consultancy'],
+        default='novas/uploads',
+    )
+
+    def validate_image(self, image):
+        if image.size > 10 * 1024 * 1024:
+            raise serializers.ValidationError('Images must be 10 MB or smaller.')
+        if image.image.format not in ('JPEG', 'PNG', 'WEBP', 'GIF'):
+            raise serializers.ValidationError('Choose a JPG, PNG, WebP or GIF image.')
+        return image

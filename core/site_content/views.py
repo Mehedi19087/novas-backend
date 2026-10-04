@@ -1,3 +1,4 @@
+from core.content_views import ContentEditorPermission
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -34,6 +35,8 @@ class CompanyOverviewAPIView(APIView):
 
 
 class HeroBannerSlideListCreateAPIView(APIView):
+    permission_classes = [ContentEditorPermission]
+
     def get(self, request):
         queryset = HeroBannerSlide.objects.filter(is_active=True).order_by('sort_order', 'id')
 

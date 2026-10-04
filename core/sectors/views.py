@@ -1,3 +1,4 @@
+from core.content_views import ContentEditorPermission
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -9,6 +10,8 @@ from .services import create_sector
 
 
 class SectorListCreateAPIView(APIView):
+    permission_classes = [ContentEditorPermission]
+
     def get(self, request):
         sectors = Sector.objects.all().order_by('sort_order', 'name')
         serializer = ResponseSectorSerializer(sectors, many=True)

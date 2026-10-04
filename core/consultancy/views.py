@@ -17,6 +17,8 @@ from .services import create_consultancy_category, create_consultancy_service
 
 
 class ConsultancyCategoryListCreateAPIView(APIView):
+    permission_classes = [ContentEditorPermission]
+
     def get(self, request):
         categories = ConsultancyCategory.objects.all().order_by('sort_order', 'name')
         serializer = ResponseConsultancyCategorySerializer(categories, many=True)

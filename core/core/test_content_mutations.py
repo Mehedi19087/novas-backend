@@ -129,3 +129,27 @@ class ContentMutationTests(APITestCase):
                 self.assertEqual(response.status_code, 400, (route, priority, response.data))
                 instance.refresh_from_db()
                 self.assertEqual(instance.priority, 100)
+
+    def test_all_content_types_create_read_and_reject_duplicates(self):
+        cases = [
+            ('product-list-create', 'product-detail', dict(sku='NEW', slug='new', name='New', category_id=self.category.pk, description='Details', specs=[{'label':'Capacity','value':'20 L'}])),
+            ('vessel-list-create', 'vessel-detail', dict(vessel_id='NEW', slug='new', name='New', vessel_type='Tug', description='Details', length_overall='20m', beam='5m', draft='2m', max_speed='20 knots', engine_power='2000 HP', hull_material='Steel', classification_society='BV', delivery_lead_time='6 months')),
+            ('project-list-create', 'project-detail', dict(project_id='NEW', slug='new', title='New', category='industry', sector_name='Industry', client='Test', location='Dhaka', year='2026', summary='Summary', description='Details')),
+            ('consultancy-service-list-create', 'consultancy-service-detail', dict(service_id='NEW', slug='new', name='New', category_id=self.consultancy_category.category_id, tagline='Advice', summary='Summary', description='Details')),
+        ]
+        for route, detail, payload in cases:
+            with self.subTest(route=route):
+                url = reverse(route)
+                self.client.force_authenticate(None)
+                self.assertEqual(self.client.post(url, payload, format='json').status_code, 401)
+                self.client.force_authenticate(self.visitor)
+                self.assertEqual(self.client.post(url, payload, format='json').status_code, 403)
+                self.client.force_authenticate(self.staff)
+                result = self.client.post(url, payload, format='json')
+                self.assertEqual(result.status_code, 201, result.data)
+                self.assertEqual(result.data['data']['priority'], 100)
+                self.assertEqual(self.client.post(url, payload, format='json').status_code, 400)
+                self.client.force_authenticate(None)
+                result = self.client.get(reverse(detail, kwargs={'slug':'new'}))
+                self.assertEqual(result.status_code, 200)
+                self.assertEqual(result.data['data']['description'], 'Details')

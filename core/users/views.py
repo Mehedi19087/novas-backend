@@ -1,9 +1,10 @@
 from rest_framework import status
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from rest_framework.permissions import AllowAny, IsAuthenticated
+from rest_framework.permissions import AllowAny, IsAuthenticated, IsAdminUser
 from rest_framework.authtoken.models import Token
-from .serializers import LoginSerializer, UserSerializer
+from .serializers import LoginSerializer, UserSerializer, ImageUploadSerializer
+from .services import upload_image
 
 
 class LoginView(APIView):
@@ -65,40 +66,20 @@ class LogoutView(APIView):
 
 
 class ImageUploadAPIView(APIView):
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAdminUser]
 
     def post(self, request):
-        import cloudinary.uploader
-        file_obj = request.FILES.get('image') or request.FILES.get('file')
-        if not file_obj:
-            return Response(
-                {'message': 'No image file provided in request.'},
-                status=status.HTTP_400_BAD_REQUEST
-            )
-
-        folder = request.data.get('folder', 'novas/uploads')
-
+        serializer = ImageUploadSerializer(data={
+            'image': request.FILES.get('image') or request.FILES.get('file'),
+            'folder': request.data.get('folder', 'novas/uploads'),
+        })
+        serializer.is_valid(raise_exception=True)
         try:
-            upload_result = cloudinary.uploader.upload(
-                file_obj,
-                folder=folder,
-                resource_type='image'
-            )
+            result = upload_image(serializer.validated_data)
+        except Exception:
             return Response(
-                {
-                    'message': 'Image uploaded successfully to Cloudinary',
-                    'data': {
-                        'url': upload_result.get('secure_url'),
-                        'public_id': upload_result.get('public_id'),
-                        'format': upload_result.get('format'),
-                        'bytes': upload_result.get('bytes'),
-                    }
-                },
-                status=status.HTTP_201_CREATED
+                {'message': 'Image upload failed. Please try again.'},
+                status=status.HTTP_502_BAD_GATEWAY,
             )
-        except Exception as e:
-            return Response(
-                {'message': f'Cloudinary upload failed: {str(e)}'},
-                status=status.HTTP_500_INTERNAL_SERVER_ERROR
-            )
-
+        result['url'] = result.pop('secure_url')
+        return Response({'message': 'Image uploaded successfully', 'data': result}, status=status.HTTP_201_CREATED)

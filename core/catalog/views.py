@@ -21,6 +21,8 @@ from .services import create_category, create_product, create_vessel
 
 
 class CategoryListCreateAPIView(APIView):
+    permission_classes = [ContentEditorPermission]
+
     def get(self, request):
         categories = Category.objects.filter(is_active=True).order_by('sort_order', 'name')
         serializer = ResponseCategorySerializer(categories, many=True)
