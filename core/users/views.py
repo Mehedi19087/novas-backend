@@ -62,3 +62,43 @@ class LogoutView(APIView):
             {'message': 'Logged out successfully'},
             status=status.HTTP_200_OK
         )
+
+
+class ImageUploadAPIView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        import cloudinary.uploader
+        file_obj = request.FILES.get('image') or request.FILES.get('file')
+        if not file_obj:
+            return Response(
+                {'message': 'No image file provided in request.'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        folder = request.data.get('folder', 'novas/uploads')
+
+        try:
+            upload_result = cloudinary.uploader.upload(
+                file_obj,
+                folder=folder,
+                resource_type='image'
+            )
+            return Response(
+                {
+                    'message': 'Image uploaded successfully to Cloudinary',
+                    'data': {
+                        'url': upload_result.get('secure_url'),
+                        'public_id': upload_result.get('public_id'),
+                        'format': upload_result.get('format'),
+                        'bytes': upload_result.get('bytes'),
+                    }
+                },
+                status=status.HTTP_201_CREATED
+            )
+        except Exception as e:
+            return Response(
+                {'message': f'Cloudinary upload failed: {str(e)}'},
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
+
