@@ -4,3 +4,7 @@ django-cors-headers==4.9.0
 djangorestframework==3.18.1
 pillow==12.3.0
 sqlparse==0.6.0
+psycopg[binary]>=3.2.0
+dj-database-url>=2.3.0
+gunicorn>=23.0.0
+
