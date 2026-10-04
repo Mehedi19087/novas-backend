@@ -1,5 +1,6 @@
 import json
 import os
+from django.conf import settings
 from django.core.management.base import BaseCommand
 from catalog.models import Category, Product, ProductSpecification, Vessel
 from consultancy.models import ConsultancyCategory, ConsultancyService
@@ -13,7 +14,9 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         self.stdout.write(self.style.NOTICE("Starting database seed..."))
-        json_path = "/home/mehedi/Documents/novas/core/seed_data.json"
+        json_path = os.path.join(settings.BASE_DIR, "seed_data.json")
+        if not os.path.exists(json_path):
+            json_path = "/home/mehedi/Documents/novas/core/seed_data.json"
 
         if not os.path.exists(json_path):
             self.stdout.write(self.style.ERROR(f"Seed file not found at {json_path}"))

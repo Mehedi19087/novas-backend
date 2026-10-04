@@ -28,7 +28,4 @@ WORKDIR /app/core
 # Expose port 8000 (documentation)
 EXPOSE 8000
 
-# 8. Run Migrations & Start the Server:
-# Railway provides a dynamic $PORT environment variable.
-# Automatically runs database migrations, then starts the production WSGI server.
-CMD ["sh", "-c", "python manage.py migrate && gunicorn core.wsgi:application --bind 0.0.0.0:${PORT:-8000}"]
+CMD ["sh", "-c", "python manage.py migrate && python manage.py seed_novas_data && gunicorn core.wsgi:application --bind 0.0.0.0:${PORT:-8000}"]
