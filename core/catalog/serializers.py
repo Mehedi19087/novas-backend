@@ -79,6 +79,7 @@ class CreateProductSerializer(serializers.Serializer):
 class ResponseProductSerializer(serializers.ModelSerializer):
     category = ResponseCategorySerializer(read_only=True)
     specs = ProductSpecificationSerializer(many=True, read_only=True)
+    image_url = serializers.SerializerMethodField()
 
     class Meta:
         model = Product
@@ -88,6 +89,14 @@ class ResponseProductSerializer(serializers.ModelSerializer):
             'specs', 'lead_time', 'origin', 'warranty', 'image_url',
             'created_at', 'updated_at'
         ]
+
+    def get_image_url(self, obj):
+        if obj.image_file:
+            try:
+                return obj.image_file.url
+            except Exception:
+                pass
+        return obj.image_url or ''
 
 
 # --- Vessel Serializers ---
@@ -115,13 +124,15 @@ class CreateVesselSerializer(serializers.Serializer):
     classification_society = serializers.CharField(max_length=100)
     crew_capacity = serializers.IntegerField(required=False, default=1)
     delivery_lead_time = serializers.CharField(max_length=100)
-    image_url = serializers.URLField()
+    image_url = serializers.URLField(required=False, allow_blank=True, default='')
     features = serializers.ListField(
         child=serializers.CharField(), required=False, default=list
     )
 
 
 class ResponseVesselSerializer(serializers.ModelSerializer):
+    image_url = serializers.SerializerMethodField()
+
     class Meta:
         model = Vessel
         fields = [
@@ -131,3 +142,12 @@ class ResponseVesselSerializer(serializers.ModelSerializer):
             'classification_society', 'crew_capacity', 'delivery_lead_time',
             'image_url', 'features', 'created_at', 'updated_at'
         ]
+
+    def get_image_url(self, obj):
+        if obj.image_file:
+            try:
+                return obj.image_file.url
+            except Exception:
+                pass
+        return obj.image_url or ''
+

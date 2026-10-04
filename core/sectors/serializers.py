@@ -32,6 +32,8 @@ class CreateSectorSerializer(serializers.Serializer):
 
 
 class ResponseSectorSerializer(serializers.ModelSerializer):
+    image_url = serializers.SerializerMethodField()
+
     class Meta:
         model = Sector
         fields = [
@@ -40,3 +42,12 @@ class ResponseSectorSerializer(serializers.ModelSerializer):
             'target_operators', 'compliance_standards', 'image_url',
             'sort_order', 'created_at', 'updated_at'
         ]
+
+    def get_image_url(self, obj):
+        if obj.image_file:
+            try:
+                return obj.image_file.url
+            except Exception:
+                pass
+        return obj.image_url or ''
+

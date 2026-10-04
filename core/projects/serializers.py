@@ -30,7 +30,7 @@ class CreateProjectSerializer(serializers.Serializer):
     client = serializers.CharField(max_length=255)
     location = serializers.CharField(max_length=255)
     year = serializers.CharField(max_length=20)
-    image = serializers.CharField(max_length=500)
+    image = serializers.CharField(max_length=500, required=False, allow_blank=True, default='')
     summary = serializers.CharField()
     description = serializers.CharField()
     features = serializers.ListField(
@@ -44,6 +44,7 @@ class CreateProjectSerializer(serializers.Serializer):
 
 class ResponseProjectSerializer(serializers.ModelSerializer):
     specs = ProjectSpecSerializer(many=True, read_only=True)
+    image = serializers.SerializerMethodField()
 
     class Meta:
         model = Project
@@ -53,3 +54,12 @@ class ResponseProjectSerializer(serializers.ModelSerializer):
             'features', 'specs', 'status', 'is_featured', 'sort_order',
             'created_at', 'updated_at'
         ]
+
+    def get_image(self, obj):
+        if obj.image_file:
+            try:
+                return obj.image_file.url
+            except Exception:
+                pass
+        return obj.image or ''
+

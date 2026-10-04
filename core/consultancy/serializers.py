@@ -62,6 +62,7 @@ class CreateConsultancyServiceSerializer(serializers.Serializer):
 
 class ResponseConsultancyServiceSerializer(serializers.ModelSerializer):
     category = ResponseConsultancyCategorySerializer(read_only=True)
+    image_url = serializers.SerializerMethodField()
 
     class Meta:
         model = ConsultancyService
@@ -72,3 +73,12 @@ class ResponseConsultancyServiceSerializer(serializers.ModelSerializer):
             'lead_advisors', 'image_url', 'featured', 'sort_order',
             'created_at', 'updated_at'
         ]
+
+    def get_image_url(self, obj):
+        if obj.image_file:
+            try:
+                return obj.image_file.url
+            except Exception:
+                pass
+        return obj.image_url or ''
+

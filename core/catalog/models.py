@@ -32,7 +32,8 @@ class Product(models.Model):
     lead_time = models.CharField(max_length=100, blank=True, default='')
     origin = models.CharField(max_length=100, blank=True, default='')
     warranty = models.CharField(max_length=100, blank=True, default='')
-    image_url = models.URLField(max_length=500, blank=True, default='')
+    image_file = models.ImageField(upload_to='novas/products/', blank=True, null=True, help_text="Upload image to Cloudinary")
+    image_url = models.URLField(max_length=500, blank=True, default='', help_text="Direct image URL or auto-populated from Cloudinary upload")
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -41,6 +42,17 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
+        if self.image_file:
+            try:
+                url = self.image_file.url
+                if self.image_url != url:
+                    self.image_url = url
+                    super().save(update_fields=['image_url'])
+            except Exception:
+                pass
 
 
 class ProductSpecification(models.Model):
@@ -73,7 +85,8 @@ class Vessel(models.Model):
     classification_society = models.CharField(max_length=100)
     crew_capacity = models.PositiveIntegerField(default=1)
     delivery_lead_time = models.CharField(max_length=100)
-    image_url = models.URLField(max_length=500)
+    image_file = models.ImageField(upload_to='novas/vessels/', blank=True, null=True, help_text="Upload image to Cloudinary")
+    image_url = models.URLField(max_length=500, blank=True, default='', help_text="Direct image URL or auto-populated from Cloudinary upload")
     features = models.JSONField(default=list, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -83,3 +96,14 @@ class Vessel(models.Model):
 
     def __str__(self):
         return self.name
+
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
+        if self.image_file:
+            try:
+                url = self.image_file.url
+                if self.image_url != url:
+                    self.image_url = url
+                    super().save(update_fields=['image_url'])
+            except Exception:
+                pass

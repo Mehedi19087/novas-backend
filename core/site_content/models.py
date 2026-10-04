@@ -6,7 +6,8 @@ class CompanyProfile(models.Model):
     short_name = models.CharField(max_length=50, default='NOVAS')
     founder = models.CharField(max_length=150, default='Mr. Raoson Alom')
     founder_title = models.CharField(max_length=150, default='Founder & CEO, Novas')
-    founder_image = models.CharField(max_length=500, default='/assets/founder.png')
+    founder_image_file = models.ImageField(upload_to='novas/company/', blank=True, null=True, help_text="Upload founder photo to Cloudinary")
+    founder_image = models.CharField(max_length=500, default='/assets/founder.png', help_text="Direct image URL or auto-populated from Cloudinary upload")
     founded_year = models.CharField(max_length=20, default='2012')
     founded_month = models.CharField(max_length=50, default='July 2012')
     team_size = models.CharField(max_length=150, default='24-member specialized engineering & research team')
@@ -30,6 +31,18 @@ class CompanyProfile(models.Model):
 
     def __str__(self):
         return self.name
+
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
+        if self.founder_image_file:
+            try:
+                url = self.founder_image_file.url
+                if self.founder_image != url:
+                    self.founder_image = url
+                    super().save(update_fields=['founder_image'])
+            except Exception:
+                pass
+
 
 
 class CompanyPillar(models.Model):
@@ -82,7 +95,8 @@ class HeroBannerSlide(models.Model):
     title = models.CharField(max_length=255)
     subtitle = models.TextField(blank=True, default='')
     badge = models.CharField(max_length=100, blank=True, default='')
-    image_url = models.CharField(max_length=500)
+    image_file = models.ImageField(upload_to='novas/banners/', blank=True, null=True, help_text="Upload banner image to Cloudinary")
+    image_url = models.CharField(max_length=500, blank=True, default='', help_text="Direct image URL or auto-populated from Cloudinary upload")
     alignment = models.CharField(max_length=20, choices=ALIGNMENT_CHOICES, default='left')
     cta_label = models.CharField(max_length=100, blank=True, default='')
     cta_link = models.CharField(max_length=255, blank=True, default='')
@@ -96,3 +110,15 @@ class HeroBannerSlide(models.Model):
 
     def __str__(self):
         return f"[{self.page_identifier}] {self.title} ({self.alignment})"
+
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
+        if self.image_file:
+            try:
+                url = self.image_file.url
+                if self.image_url != url:
+                    self.image_url = url
+                    super().save(update_fields=['image_url'])
+            except Exception:
+                pass
+

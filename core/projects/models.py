@@ -24,7 +24,8 @@ class Project(models.Model):
     client = models.CharField(max_length=255)
     location = models.CharField(max_length=255)
     year = models.CharField(max_length=20)
-    image = models.CharField(max_length=500)
+    image_file = models.ImageField(upload_to='novas/projects/', blank=True, null=True, help_text="Upload image to Cloudinary")
+    image = models.CharField(max_length=500, blank=True, default='', help_text="Direct image URL or auto-populated from Cloudinary upload")
     summary = models.TextField()
     description = models.TextField()
     features = models.JSONField(default=list, blank=True)
@@ -39,6 +40,18 @@ class Project(models.Model):
 
     def __str__(self):
         return f"[{self.category}] {self.title}"
+
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
+        if self.image_file:
+            try:
+                url = self.image_file.url
+                if self.image != url:
+                    self.image = url
+                    super().save(update_fields=['image'])
+            except Exception:
+                pass
+
 
 
 class ProjectSpec(models.Model):
